@@ -1,0 +1,40 @@
+An Example For insertion:
+
+SqlConnection sqlConnection1 = new SqlConnection("your connection string ");
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "insert into customer (first_name, last_name, username, encrypted_password) values (@first_name, @last_name, @username, @encrypted_password)";
+                cmd.Connection = sqlConnection1;
+
+                cmd.Parameters.AddWithValue("@first_name", "first_name");
+                cmd.Parameters.AddWithValue("@last_name", "last_name");
+                cmd.Parameters.AddWithValue("@username", "liliana");
+                cmd.Parameters.AddWithValue("@encrypted_password", "password123");
+
+                sqlConnection1.Open();
+                cmd.ExecuteNonQuery();
+                sqlConnection1.Close();
+
+An example for Selection:
+
+SqlConnection sqlConnection1 = new SqlConnection(" your connection string ");
+            SqlCommand cmd = new SqlCommand();
+            SqlDataReader reader;
+
+            cmd.CommandText =
+                "Select first_name from customer";
+
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection = sqlConnection1;
+
+            sqlConnection1.Open();
+
+            reader = cmd.ExecuteReader();
+            // Data is accessible through the DataReader object here.
+            while (reader.Read())
+            {
+                // In this example, I changed a label text to the query result
+                f_name.Text = reader["first_name"].ToString();
+                
+            }
+
+            sqlConnection1.Close();
