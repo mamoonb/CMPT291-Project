@@ -54,6 +54,11 @@ WpfApp1
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:WpfApp1.DataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
 <member name="T:WpfApp1.projectDataSet">
 <summary>
 Represents a strongly typed in-memory cache of data.
@@ -252,11 +257,6 @@ InitializeComponent
 <member name="M:WpfApp1.Application.Main">
 <summary>
 Application Entry Point.
-</summary>
-</member>
-<member name="T:WpfApp1.DataSet1">
-<summary>
-Represents a strongly typed in-memory cache of data.
 </summary>
 </member>
 <member name="T:WpfApp1.MainWindow">
