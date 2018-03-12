@@ -52,161 +52,172 @@ Partial Class RentalDetails
         'NameLabel
         '
         Me.NameLabel.AutoSize = True
-        Me.NameLabel.Location = New System.Drawing.Point(86, 34)
+        Me.NameLabel.Location = New System.Drawing.Point(76, 27)
         Me.NameLabel.Name = "NameLabel"
-        Me.NameLabel.Size = New System.Drawing.Size(86, 20)
+        Me.NameLabel.Size = New System.Drawing.Size(76, 17)
         Me.NameLabel.TabIndex = 0
         Me.NameLabel.Text = "First Name"
         '
         'LastNameLabel
         '
         Me.LastNameLabel.AutoSize = True
-        Me.LastNameLabel.Location = New System.Drawing.Point(86, 80)
+        Me.LastNameLabel.Location = New System.Drawing.Point(76, 64)
         Me.LastNameLabel.Name = "LastNameLabel"
-        Me.LastNameLabel.Size = New System.Drawing.Size(86, 20)
+        Me.LastNameLabel.Size = New System.Drawing.Size(76, 17)
         Me.LastNameLabel.TabIndex = 1
         Me.LastNameLabel.Text = "Last Name"
         '
         'FirstNameTextbox
         '
-        Me.FirstNameTextbox.Location = New System.Drawing.Point(226, 34)
+        Me.FirstNameTextbox.Location = New System.Drawing.Point(201, 27)
+        Me.FirstNameTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.FirstNameTextbox.Name = "FirstNameTextbox"
-        Me.FirstNameTextbox.Size = New System.Drawing.Size(174, 26)
+        Me.FirstNameTextbox.Size = New System.Drawing.Size(155, 22)
         Me.FirstNameTextbox.TabIndex = 2
         '
         'LastNameTextbox
         '
-        Me.LastNameTextbox.Location = New System.Drawing.Point(226, 80)
+        Me.LastNameTextbox.Location = New System.Drawing.Point(201, 64)
+        Me.LastNameTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LastNameTextbox.Name = "LastNameTextbox"
-        Me.LastNameTextbox.Size = New System.Drawing.Size(174, 26)
+        Me.LastNameTextbox.Size = New System.Drawing.Size(155, 22)
         Me.LastNameTextbox.TabIndex = 3
         '
         'PhoneTextBox
         '
-        Me.PhoneTextBox.Location = New System.Drawing.Point(226, 163)
+        Me.PhoneTextBox.Location = New System.Drawing.Point(201, 130)
+        Me.PhoneTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PhoneTextBox.Name = "PhoneTextBox"
-        Me.PhoneTextBox.Size = New System.Drawing.Size(174, 26)
+        Me.PhoneTextBox.Size = New System.Drawing.Size(155, 22)
         Me.PhoneTextBox.TabIndex = 4
         '
         'EmailTextBox
         '
-        Me.EmailTextBox.Location = New System.Drawing.Point(226, 211)
+        Me.EmailTextBox.Location = New System.Drawing.Point(201, 169)
+        Me.EmailTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.EmailTextBox.Name = "EmailTextBox"
-        Me.EmailTextBox.Size = New System.Drawing.Size(174, 26)
+        Me.EmailTextBox.Size = New System.Drawing.Size(155, 22)
         Me.EmailTextBox.TabIndex = 5
         '
         'PhoneNumberLabel
         '
         Me.PhoneNumberLabel.AutoSize = True
-        Me.PhoneNumberLabel.Location = New System.Drawing.Point(86, 165)
+        Me.PhoneNumberLabel.Location = New System.Drawing.Point(76, 132)
         Me.PhoneNumberLabel.Name = "PhoneNumberLabel"
-        Me.PhoneNumberLabel.Size = New System.Drawing.Size(115, 20)
+        Me.PhoneNumberLabel.Size = New System.Drawing.Size(103, 17)
         Me.PhoneNumberLabel.TabIndex = 6
         Me.PhoneNumberLabel.Text = "Phone Number"
         '
         'EmailLabel
         '
         Me.EmailLabel.AutoSize = True
-        Me.EmailLabel.Location = New System.Drawing.Point(86, 215)
+        Me.EmailLabel.Location = New System.Drawing.Point(76, 172)
         Me.EmailLabel.Name = "EmailLabel"
-        Me.EmailLabel.Size = New System.Drawing.Size(48, 20)
+        Me.EmailLabel.Size = New System.Drawing.Size(42, 17)
         Me.EmailLabel.TabIndex = 7
         Me.EmailLabel.Text = "Email"
         '
         'AddressLabel1
         '
         Me.AddressLabel1.AutoSize = True
-        Me.AddressLabel1.Location = New System.Drawing.Point(86, 262)
+        Me.AddressLabel1.Location = New System.Drawing.Point(76, 210)
         Me.AddressLabel1.Name = "AddressLabel1"
-        Me.AddressLabel1.Size = New System.Drawing.Size(68, 20)
+        Me.AddressLabel1.Size = New System.Drawing.Size(60, 17)
         Me.AddressLabel1.TabIndex = 9
         Me.AddressLabel1.Text = "Address"
         '
         'AddressTextbox
         '
-        Me.AddressTextbox.Location = New System.Drawing.Point(226, 257)
+        Me.AddressTextbox.Location = New System.Drawing.Point(201, 206)
+        Me.AddressTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.AddressTextbox.Name = "AddressTextbox"
-        Me.AddressTextbox.Size = New System.Drawing.Size(174, 26)
+        Me.AddressTextbox.Size = New System.Drawing.Size(155, 22)
         Me.AddressTextbox.TabIndex = 8
         '
         'StreetLabel1
         '
         Me.StreetLabel1.AutoSize = True
-        Me.StreetLabel1.Location = New System.Drawing.Point(86, 312)
+        Me.StreetLabel1.Location = New System.Drawing.Point(76, 250)
         Me.StreetLabel1.Name = "StreetLabel1"
-        Me.StreetLabel1.Size = New System.Drawing.Size(53, 20)
+        Me.StreetLabel1.Size = New System.Drawing.Size(46, 17)
         Me.StreetLabel1.TabIndex = 11
         Me.StreetLabel1.Text = "Street"
         '
         'StreetTextbox
         '
-        Me.StreetTextbox.Location = New System.Drawing.Point(226, 306)
+        Me.StreetTextbox.Location = New System.Drawing.Point(201, 245)
+        Me.StreetTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.StreetTextbox.Name = "StreetTextbox"
-        Me.StreetTextbox.Size = New System.Drawing.Size(174, 26)
+        Me.StreetTextbox.Size = New System.Drawing.Size(155, 22)
         Me.StreetTextbox.TabIndex = 10
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(449, 80)
+        Me.Label1.Location = New System.Drawing.Point(399, 64)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(177, 20)
+        Me.Label1.Size = New System.Drawing.Size(160, 17)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Drivers License Number"
         '
         'DriversLicenseTextbox
         '
-        Me.DriversLicenseTextbox.Location = New System.Drawing.Point(652, 77)
+        Me.DriversLicenseTextbox.Location = New System.Drawing.Point(580, 62)
+        Me.DriversLicenseTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DriversLicenseTextbox.Name = "DriversLicenseTextbox"
-        Me.DriversLicenseTextbox.Size = New System.Drawing.Size(174, 26)
+        Me.DriversLicenseTextbox.Size = New System.Drawing.Size(155, 22)
         Me.DriversLicenseTextbox.TabIndex = 12
         '
         'IssuingAuthorityTextbox
         '
         Me.IssuingAuthorityTextbox.AutoSize = True
-        Me.IssuingAuthorityTextbox.Location = New System.Drawing.Point(449, 126)
+        Me.IssuingAuthorityTextbox.Location = New System.Drawing.Point(399, 101)
         Me.IssuingAuthorityTextbox.Name = "IssuingAuthorityTextbox"
-        Me.IssuingAuthorityTextbox.Size = New System.Drawing.Size(127, 20)
+        Me.IssuingAuthorityTextbox.Size = New System.Drawing.Size(112, 17)
         Me.IssuingAuthorityTextbox.TabIndex = 15
         Me.IssuingAuthorityTextbox.Text = "Issuing Authority"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(652, 123)
+        Me.TextBox1.Location = New System.Drawing.Point(580, 98)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(174, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(155, 22)
         Me.TextBox1.TabIndex = 14
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(449, 171)
+        Me.Label2.Location = New System.Drawing.Point(399, 137)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(119, 20)
+        Me.Label2.Size = New System.Drawing.Size(105, 17)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Issuing Country"
         '
         'IssuingCountryTextbox
         '
-        Me.IssuingCountryTextbox.Location = New System.Drawing.Point(652, 168)
+        Me.IssuingCountryTextbox.Location = New System.Drawing.Point(580, 134)
+        Me.IssuingCountryTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.IssuingCountryTextbox.Name = "IssuingCountryTextbox"
-        Me.IssuingCountryTextbox.Size = New System.Drawing.Size(174, 26)
+        Me.IssuingCountryTextbox.Size = New System.Drawing.Size(155, 22)
         Me.IssuingCountryTextbox.TabIndex = 16
         '
         'NextButton
         '
-        Me.NextButton.Location = New System.Drawing.Point(740, 339)
+        Me.NextButton.Location = New System.Drawing.Point(658, 271)
+        Me.NextButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.NextButton.Name = "NextButton"
-        Me.NextButton.Size = New System.Drawing.Size(86, 37)
+        Me.NextButton.Size = New System.Drawing.Size(76, 30)
         Me.NextButton.TabIndex = 18
         Me.NextButton.Text = "Next"
         Me.NextButton.UseVisualStyleBackColor = True
         '
         'BackButton
         '
-        Me.BackButton.Location = New System.Drawing.Point(453, 333)
+        Me.BackButton.Location = New System.Drawing.Point(403, 266)
+        Me.BackButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(86, 37)
+        Me.BackButton.Size = New System.Drawing.Size(76, 30)
         Me.BackButton.TabIndex = 19
         Me.BackButton.Text = "Back"
         Me.BackButton.UseVisualStyleBackColor = True
@@ -214,50 +225,53 @@ Partial Class RentalDetails
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(86, 124)
+        Me.Label3.Location = New System.Drawing.Point(76, 99)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 20)
+        Me.Label3.Size = New System.Drawing.Size(33, 17)
         Me.Label3.TabIndex = 21
         Me.Label3.Text = "Age"
         '
         'AgeTextbox
         '
-        Me.AgeTextbox.Location = New System.Drawing.Point(226, 121)
+        Me.AgeTextbox.Location = New System.Drawing.Point(201, 97)
+        Me.AgeTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.AgeTextbox.Name = "AgeTextbox"
-        Me.AgeTextbox.Size = New System.Drawing.Size(174, 26)
+        Me.AgeTextbox.Size = New System.Drawing.Size(155, 22)
         Me.AgeTextbox.TabIndex = 20
         '
         'CityLabel
         '
         Me.CityLabel.AutoSize = True
-        Me.CityLabel.Location = New System.Drawing.Point(449, 37)
+        Me.CityLabel.Location = New System.Drawing.Point(399, 30)
         Me.CityLabel.Name = "CityLabel"
-        Me.CityLabel.Size = New System.Drawing.Size(35, 20)
+        Me.CityLabel.Size = New System.Drawing.Size(31, 17)
         Me.CityLabel.TabIndex = 23
         Me.CityLabel.Text = "City"
         '
         'CityTextbox
         '
-        Me.CityTextbox.Location = New System.Drawing.Point(652, 34)
+        Me.CityTextbox.Location = New System.Drawing.Point(580, 27)
+        Me.CityTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CityTextbox.Name = "CityTextbox"
-        Me.CityTextbox.Size = New System.Drawing.Size(174, 26)
+        Me.CityTextbox.Size = New System.Drawing.Size(155, 22)
         Me.CityTextbox.TabIndex = 22
         '
         'ResultsBox
         '
         Me.ResultsBox.FormattingEnabled = True
         Me.ResultsBox.HorizontalScrollbar = True
-        Me.ResultsBox.ItemHeight = 20
-        Me.ResultsBox.Location = New System.Drawing.Point(448, 226)
+        Me.ResultsBox.ItemHeight = 16
+        Me.ResultsBox.Location = New System.Drawing.Point(398, 181)
+        Me.ResultsBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ResultsBox.Name = "ResultsBox"
-        Me.ResultsBox.Size = New System.Drawing.Size(378, 84)
+        Me.ResultsBox.Size = New System.Drawing.Size(336, 68)
         Me.ResultsBox.TabIndex = 24
         '
         'RentalDetails
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(975, 388)
+        Me.ClientSize = New System.Drawing.Size(867, 310)
         Me.Controls.Add(Me.ResultsBox)
         Me.Controls.Add(Me.CityLabel)
         Me.Controls.Add(Me.CityTextbox)
@@ -283,6 +297,7 @@ Partial Class RentalDetails
         Me.Controls.Add(Me.FirstNameTextbox)
         Me.Controls.Add(Me.LastNameLabel)
         Me.Controls.Add(Me.NameLabel)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "RentalDetails"
         Me.Text = "Rental Details"
         Me.ResumeLayout(False)

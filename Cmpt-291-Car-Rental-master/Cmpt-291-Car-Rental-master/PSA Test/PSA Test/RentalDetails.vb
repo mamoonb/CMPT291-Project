@@ -49,4 +49,8 @@ Public Class RentalDetails
 
 
     End Sub
+
+    Private Sub ResultsBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ResultsBox.SelectedIndexChanged
+
+    End Sub
 End Class
