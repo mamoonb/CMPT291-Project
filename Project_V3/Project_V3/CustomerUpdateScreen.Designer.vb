@@ -40,6 +40,7 @@ Partial Class CustomerUpdateScreen
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.GoBack = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ContextMenuStrip1
@@ -185,11 +186,21 @@ Partial Class CustomerUpdateScreen
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Address"
         '
+        'GoBack
+        '
+        Me.GoBack.Location = New System.Drawing.Point(694, 347)
+        Me.GoBack.Name = "GoBack"
+        Me.GoBack.Size = New System.Drawing.Size(50, 63)
+        Me.GoBack.TabIndex = 17
+        Me.GoBack.Text = "<<"
+        Me.GoBack.UseVisualStyleBackColor = True
+        '
         'CustomerUpdateScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.GoBack)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -230,4 +241,5 @@ Partial Class CustomerUpdateScreen
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents GoBack As Button
 End Class

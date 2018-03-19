@@ -78,4 +78,12 @@ Public Class CustomerUpdateScreen
     Private Sub AddressTextBox_TextChanged(sender As Object, e As EventArgs) Handles AddressTextBox.TextChanged
 
     End Sub
+
+    Private Sub GoBack_Click(sender As Object, e As EventArgs) Handles GoBack.Click
+        Dim oForm As EmployeeMenu
+        oForm = New EmployeeMenu()
+        oForm.Show()
+        oForm = Nothing
+        Me.Hide()
+    End Sub
 End Class
