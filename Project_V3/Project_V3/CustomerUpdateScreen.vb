@@ -16,7 +16,6 @@ Public Class CustomerUpdateScreen
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
         Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
-        'getCIDCount(query)
         connection.Open()
         getCIDCount(query)
         command.Connection = connection
@@ -24,17 +23,6 @@ Public Class CustomerUpdateScreen
         command.ExecuteNonQuery()
         connection.Close()
 
-
-        'Dim CID As Integer  'Declare the CID counter 
-        'Dim Fname As String  'Declare the CID counter
-        'Dim Lname As String  'Declare the CID counter
-        'Dim Address As String  'Declare the CID counter
-        'Dim Telephone As Integer
-        'Dim Email As String
-        'Dim AccountNum As Integer
-        'Dim AccountType As String
-
-        'CID = 1 'Initialize the CID counter to 1
 
         'This If statement will change the label showing an error message in red
         'If connection.State = ConnectionState.Closed Then
@@ -44,15 +32,12 @@ Public Class CustomerUpdateScreen
         'connection.Close()
         'End If
 
-        'Dim insertQuery As String = "INSERT INTO Customer (FName, LName, Address, Email) VALUES('" & FirstNameTextBox.Text & "', '" & LastNameTextBox.Text & "', '" & AddressTextBox.Text & "', '" & EmailTextBox.Text & "')"
-        'Dim insertQueryint As Integer = "INSERT INTO Customer (CID, Telephone, AccountNum, CreditCardNumber, OrderCount, Rating) VALUES('" & CID & "', '" & TelephoneTextBox.Text & "', '" & CID & "', '" & CreditCardTextBox.Text & "', '" & CID & "', '" & CID & "')"
-        'ExecuteQuery(insertQuery)
-
         MessageBox.Show("Data Has Been updated")    'This will pop up a confirmation window
 
-        'CID += 1    'Increment the CID counter 
+
     End Sub
 
+    'Count the number of Customers in the SQL table and convert it to a String 
     Public Sub getCIDCount(query As String)
         Dim connStr As String = "Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true "
         'Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
@@ -68,18 +53,12 @@ Public Class CustomerUpdateScreen
                     count = Convert.ToInt16(comm.ExecuteScalar())
                     count.ToString()
                 Catch ex As SqlException
-                    ' put your exception here '
+                    ' Count unable to return value  '
                 End Try
             End Using
         End Using
     End Sub
 
-    'Public Sub ExecuteQuery(query As String)
-    '    Dim command As New SqlCommand(query, connection)
-    '    connection.Open()
-    '    command.ExecuteNonQuery()
-    '    connection.Close()
-    'End Sub
     Private Sub lbl_Conn_Click(sender As Object, e As EventArgs) Handles lbl_Conn.Click
 
     End Sub
