@@ -29,39 +29,43 @@ Partial Class EmployeeMenu
         '
         'UpdateCustomer
         '
-        Me.UpdateCustomer.Location = New System.Drawing.Point(12, 33)
+        Me.UpdateCustomer.Location = New System.Drawing.Point(11, 26)
+        Me.UpdateCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.UpdateCustomer.Name = "UpdateCustomer"
-        Me.UpdateCustomer.Size = New System.Drawing.Size(186, 51)
+        Me.UpdateCustomer.Size = New System.Drawing.Size(165, 41)
         Me.UpdateCustomer.TabIndex = 0
         Me.UpdateCustomer.Text = "Update Customer"
         Me.UpdateCustomer.UseVisualStyleBackColor = True
         '
         'UpdateEmployee
         '
-        Me.UpdateEmployee.Location = New System.Drawing.Point(12, 108)
+        Me.UpdateEmployee.Location = New System.Drawing.Point(11, 86)
+        Me.UpdateEmployee.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.UpdateEmployee.Name = "UpdateEmployee"
-        Me.UpdateEmployee.Size = New System.Drawing.Size(186, 49)
+        Me.UpdateEmployee.Size = New System.Drawing.Size(165, 39)
         Me.UpdateEmployee.TabIndex = 1
         Me.UpdateEmployee.Text = "Update Employee"
         Me.UpdateEmployee.UseVisualStyleBackColor = True
         '
         'AddMovie
         '
-        Me.AddMovie.Location = New System.Drawing.Point(12, 179)
+        Me.AddMovie.Location = New System.Drawing.Point(11, 143)
+        Me.AddMovie.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.AddMovie.Name = "AddMovie"
-        Me.AddMovie.Size = New System.Drawing.Size(186, 50)
+        Me.AddMovie.Size = New System.Drawing.Size(165, 40)
         Me.AddMovie.TabIndex = 2
         Me.AddMovie.Text = "Add Movie"
         Me.AddMovie.UseVisualStyleBackColor = True
         '
         'EmployeeMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(512, 360)
         Me.Controls.Add(Me.AddMovie)
         Me.Controls.Add(Me.UpdateEmployee)
         Me.Controls.Add(Me.UpdateCustomer)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "EmployeeMenu"
         Me.Text = "EmployeeMenu"
         Me.ResumeLayout(False)
