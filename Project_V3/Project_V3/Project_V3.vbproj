@@ -78,6 +78,12 @@
     <Compile Include="AddMovie.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AllCustomer.Designer.vb">
+      <DependentUpon>AllCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CustomerMenu.Designer.vb">
       <DependentUpon>CustomerMenu.vb</DependentUpon>
     </Compile>
@@ -128,6 +134,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AddMovie.resx">
       <DependentUpon>AddMovie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllCustomer.resx">
+      <DependentUpon>AllCustomer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerMenu.resx">
       <DependentUpon>CustomerMenu.vb</DependentUpon>
