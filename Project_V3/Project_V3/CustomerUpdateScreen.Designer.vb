@@ -25,7 +25,6 @@ Partial Class CustomerUpdateScreen
         Me.components = New System.ComponentModel.Container()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.UpdateButton = New System.Windows.Forms.Button()
-        Me.lbl_Conn = New System.Windows.Forms.Label()
         Me.FirstNameTextBox = New System.Windows.Forms.TextBox()
         Me.LastNameTextBox = New System.Windows.Forms.TextBox()
         Me.TelephoneTextBox = New System.Windows.Forms.TextBox()
@@ -41,6 +40,10 @@ Partial Class CustomerUpdateScreen
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GoBack = New System.Windows.Forms.Button()
+        Me.UserName = New System.Windows.Forms.TextBox()
+        Me.Password = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ContextMenuStrip1
@@ -51,63 +54,61 @@ Partial Class CustomerUpdateScreen
         '
         'UpdateButton
         '
-        Me.UpdateButton.Location = New System.Drawing.Point(540, 347)
+        Me.UpdateButton.Location = New System.Drawing.Point(479, 312)
+        Me.UpdateButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.UpdateButton.Name = "UpdateButton"
-        Me.UpdateButton.Size = New System.Drawing.Size(148, 63)
+        Me.UpdateButton.Size = New System.Drawing.Size(132, 50)
         Me.UpdateButton.TabIndex = 1
-        Me.UpdateButton.Text = "Update"
+        Me.UpdateButton.Text = "Register"
         Me.UpdateButton.UseVisualStyleBackColor = True
-        '
-        'lbl_Conn
-        '
-        Me.lbl_Conn.AutoSize = True
-        Me.lbl_Conn.Location = New System.Drawing.Point(491, 263)
-        Me.lbl_Conn.Name = "lbl_Conn"
-        Me.lbl_Conn.Size = New System.Drawing.Size(83, 20)
-        Me.lbl_Conn.TabIndex = 2
-        Me.lbl_Conn.Text = "Blank Text"
         '
         'FirstNameTextBox
         '
-        Me.FirstNameTextBox.Location = New System.Drawing.Point(193, 74)
+        Me.FirstNameTextBox.Location = New System.Drawing.Point(172, 59)
+        Me.FirstNameTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.FirstNameTextBox.Name = "FirstNameTextBox"
-        Me.FirstNameTextBox.Size = New System.Drawing.Size(184, 26)
+        Me.FirstNameTextBox.Size = New System.Drawing.Size(164, 22)
         Me.FirstNameTextBox.TabIndex = 3
         '
         'LastNameTextBox
         '
-        Me.LastNameTextBox.Location = New System.Drawing.Point(193, 117)
+        Me.LastNameTextBox.Location = New System.Drawing.Point(172, 94)
+        Me.LastNameTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LastNameTextBox.Name = "LastNameTextBox"
-        Me.LastNameTextBox.Size = New System.Drawing.Size(184, 26)
+        Me.LastNameTextBox.Size = New System.Drawing.Size(164, 22)
         Me.LastNameTextBox.TabIndex = 4
         '
         'TelephoneTextBox
         '
-        Me.TelephoneTextBox.Location = New System.Drawing.Point(193, 166)
+        Me.TelephoneTextBox.Location = New System.Drawing.Point(172, 133)
+        Me.TelephoneTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TelephoneTextBox.Name = "TelephoneTextBox"
-        Me.TelephoneTextBox.Size = New System.Drawing.Size(184, 26)
+        Me.TelephoneTextBox.Size = New System.Drawing.Size(164, 22)
         Me.TelephoneTextBox.TabIndex = 5
         '
         'EmailTextBox
         '
-        Me.EmailTextBox.Location = New System.Drawing.Point(193, 212)
+        Me.EmailTextBox.Location = New System.Drawing.Point(172, 170)
+        Me.EmailTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.EmailTextBox.Name = "EmailTextBox"
-        Me.EmailTextBox.Size = New System.Drawing.Size(184, 26)
+        Me.EmailTextBox.Size = New System.Drawing.Size(164, 22)
         Me.EmailTextBox.TabIndex = 6
         '
         'AddressTextBox
         '
-        Me.AddressTextBox.Location = New System.Drawing.Point(529, 74)
+        Me.AddressTextBox.Location = New System.Drawing.Point(470, 59)
+        Me.AddressTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.AddressTextBox.Multiline = True
         Me.AddressTextBox.Name = "AddressTextBox"
-        Me.AddressTextBox.Size = New System.Drawing.Size(184, 118)
+        Me.AddressTextBox.Size = New System.Drawing.Size(164, 95)
         Me.AddressTextBox.TabIndex = 7
         '
         'CreditCardTextBox
         '
-        Me.CreditCardTextBox.Location = New System.Drawing.Point(193, 263)
+        Me.CreditCardTextBox.Location = New System.Drawing.Point(172, 210)
+        Me.CreditCardTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CreditCardTextBox.Name = "CreditCardTextBox"
-        Me.CreditCardTextBox.Size = New System.Drawing.Size(184, 26)
+        Me.CreditCardTextBox.Size = New System.Drawing.Size(164, 22)
         Me.CreditCardTextBox.TabIndex = 8
         '
         'PlanTypeComboBox
@@ -116,9 +117,10 @@ Partial Class CustomerUpdateScreen
         Me.PlanTypeComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.PlanTypeComboBox.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.PlanTypeComboBox.Items.AddRange(New Object() {"Limited Plan", "Unlimited Plan 1", "Unlimited Plan 2", "Unlimited Plan 3"})
-        Me.PlanTypeComboBox.Location = New System.Drawing.Point(193, 316)
+        Me.PlanTypeComboBox.Location = New System.Drawing.Point(172, 253)
+        Me.PlanTypeComboBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PlanTypeComboBox.Name = "PlanTypeComboBox"
-        Me.PlanTypeComboBox.Size = New System.Drawing.Size(184, 28)
+        Me.PlanTypeComboBox.Size = New System.Drawing.Size(164, 24)
         Me.PlanTypeComboBox.Sorted = True
         Me.PlanTypeComboBox.TabIndex = 9
         Me.PlanTypeComboBox.Text = "Choose a Plan"
@@ -126,80 +128,117 @@ Partial Class CustomerUpdateScreen
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(92, 74)
+        Me.Label1.Location = New System.Drawing.Point(82, 59)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(86, 20)
+        Me.Label1.Size = New System.Drawing.Size(76, 17)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "First Name"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(92, 123)
+        Me.Label2.Location = New System.Drawing.Point(82, 98)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(86, 20)
+        Me.Label2.Size = New System.Drawing.Size(76, 17)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Last Name"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(103, 169)
+        Me.Label3.Location = New System.Drawing.Point(92, 135)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 20)
+        Me.Label3.Size = New System.Drawing.Size(76, 17)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Telephone"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(135, 215)
+        Me.Label4.Location = New System.Drawing.Point(120, 172)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(52, 20)
+        Me.Label4.Size = New System.Drawing.Size(46, 17)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Email "
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(38, 269)
+        Me.Label5.Location = New System.Drawing.Point(34, 215)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(149, 20)
+        Me.Label5.Size = New System.Drawing.Size(133, 17)
         Me.Label5.TabIndex = 14
         Me.Label5.Text = "Credit Card Number"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(109, 319)
+        Me.Label6.Location = New System.Drawing.Point(97, 255)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(78, 20)
+        Me.Label6.Size = New System.Drawing.Size(72, 17)
         Me.Label6.TabIndex = 15
         Me.Label6.Text = "Plan Type"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(455, 74)
+        Me.Label7.Location = New System.Drawing.Point(404, 59)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(68, 20)
+        Me.Label7.Size = New System.Drawing.Size(60, 17)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Address"
         '
         'GoBack
         '
-        Me.GoBack.Location = New System.Drawing.Point(694, 347)
+        Me.GoBack.Location = New System.Drawing.Point(617, 312)
+        Me.GoBack.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GoBack.Name = "GoBack"
-        Me.GoBack.Size = New System.Drawing.Size(50, 63)
+        Me.GoBack.Size = New System.Drawing.Size(44, 50)
         Me.GoBack.TabIndex = 17
         Me.GoBack.Text = "<<"
         Me.GoBack.UseVisualStyleBackColor = True
         '
+        'UserName
+        '
+        Me.UserName.Location = New System.Drawing.Point(172, 299)
+        Me.UserName.Name = "UserName"
+        Me.UserName.Size = New System.Drawing.Size(164, 22)
+        Me.UserName.TabIndex = 18
+        '
+        'Password
+        '
+        Me.Password.Location = New System.Drawing.Point(172, 340)
+        Me.Password.Name = "Password"
+        Me.Password.Size = New System.Drawing.Size(164, 22)
+        Me.Password.TabIndex = 19
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(95, 302)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(73, 17)
+        Me.Label8.TabIndex = 20
+        Me.Label8.Text = "Username"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(94, 343)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(69, 17)
+        Me.Label9.TabIndex = 21
+        Me.Label9.Text = "Password"
+        '
         'CustomerUpdateScreen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(711, 404)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Password)
+        Me.Controls.Add(Me.UserName)
         Me.Controls.Add(Me.GoBack)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -215,8 +254,8 @@ Partial Class CustomerUpdateScreen
         Me.Controls.Add(Me.TelephoneTextBox)
         Me.Controls.Add(Me.LastNameTextBox)
         Me.Controls.Add(Me.FirstNameTextBox)
-        Me.Controls.Add(Me.lbl_Conn)
         Me.Controls.Add(Me.UpdateButton)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "CustomerUpdateScreen"
         Me.Text = "CustomerUpdateScreen"
         Me.ResumeLayout(False)
@@ -226,7 +265,6 @@ Partial Class CustomerUpdateScreen
 
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents UpdateButton As Button
-    Friend WithEvents lbl_Conn As Label
     Friend WithEvents FirstNameTextBox As TextBox
     Friend WithEvents LastNameTextBox As TextBox
     Friend WithEvents TelephoneTextBox As TextBox
@@ -242,4 +280,8 @@ Partial Class CustomerUpdateScreen
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents GoBack As Button
+    Friend WithEvents UserName As TextBox
+    Friend WithEvents Password As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
 End Class
