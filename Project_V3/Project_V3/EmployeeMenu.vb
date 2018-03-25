@@ -26,4 +26,12 @@
     Private Sub EmployeeMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub CustomerDisplayButton_Click(sender As Object, e As EventArgs) Handles CustomerDisplayButton.Click
+        Dim oForm As AllCustomer
+        oForm = New AllCustomer()
+        oForm.Show()
+        oForm = Nothing
+        Me.Hide()
+    End Sub
 End Class
