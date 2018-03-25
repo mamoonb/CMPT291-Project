@@ -16,7 +16,7 @@ Public Class EmployeeUpdateScreen
     End Sub
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
-        Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
+        Dim query As String = "SELECT COUNT(EID) AS EIDcount FROM Employee"
 
         connection.Open()
         getCIDCount(query)
