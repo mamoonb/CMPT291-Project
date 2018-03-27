@@ -4,8 +4,6 @@ Public Class CustomerUpdateScreen
     Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
     Dim command As New SqlCommand
     Dim count As Int16
-    'Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
-    'Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
     Private Sub ContextMenuStrip1_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStrip1.Opening
 
     End Sub
@@ -16,10 +14,13 @@ Public Class CustomerUpdateScreen
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
         Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
+
         connection.Open()
+        Dim todayDate As String = DateTime.Now.ToShortDateString()
+        Dim Plantype As String = PlanTypeComboBox.Text
         getCIDCount(query)
         command.Connection = connection
-        command.CommandText = "INSERT INTO Customer (CID, FName, LName, Address, Telephone, Email, AccountNum, AccountType, CreditCardNumber, OrderCount, Rating, DateCreated) VALUES('" & count & "', '" & FirstNameTextBox.Text & "', '" & LastNameTextBox.Text & "', '" & AddressTextBox.Text & "', '" & 123 & "', '" & EmailTextBox.Text & "', '" & 123 & "', '" & 1 & "', '" & CreditCardTextBox.Text & "', '" & 1 & "', '" & 1 & "', '" & 123 & "')"
+        command.CommandText = "INSERT INTO Customer (CID, FName, LName, Address, Telephone, Email, AccountNum, AccountType, CreditCardNumber, OrderCount, Rating, DateCreated) VALUES('" & count & "', '" & FirstNameTextBox.Text & "', '" & LastNameTextBox.Text & "', '" & AddressTextBox.Text & "', '" & TelephoneTextBox.Text & "', '" & EmailTextBox.Text & "', '" & count & "', '" & Plantype & "', '" & CreditCardTextBox.Text & "', '" & 1 & "', '" & 1 & "', '" & todayDate & "')"
         command.ExecuteNonQuery()
         connection.Close()
 
@@ -33,7 +34,8 @@ Public Class CustomerUpdateScreen
         'End If
 
         MessageBox.Show("Data Has Been updated")    'This will pop up a confirmation window
-
+        FirstNameTextBox.Text = Nothing
+        PlanTypeComboBox.Text = Nothing
 
     End Sub
 
