@@ -29,18 +29,20 @@ Partial Class AllCustomer
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(11, 10)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(776, 426)
+        Me.DataGridView1.Size = New System.Drawing.Size(690, 341)
         Me.DataGridView1.TabIndex = 0
         '
         'AllCustomer
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(711, 360)
         Me.Controls.Add(Me.DataGridView1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "AllCustomer"
         Me.Text = "AllCustomer"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

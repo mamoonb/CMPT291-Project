@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class EmployeeUpdateScreen
-    Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
+    Dim connection As New SqlConnection("Server = MAMOON-XPS;Database = project;Integrated Security = true ")
     Dim command As New SqlCommand
     Dim count As Int16
     Private Sub GoBack_Click(sender As Object, e As EventArgs) Handles GoBack.Click
