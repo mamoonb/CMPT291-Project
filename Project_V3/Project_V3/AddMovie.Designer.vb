@@ -122,7 +122,7 @@ Partial Class AddMovie
         Me.Update.Name = "Update"
         Me.Update.Size = New System.Drawing.Size(99, 38)
         Me.Update.TabIndex = 10
-        Me.Update.Text = "Update"
+        Me.Update.Text = "Add"
         Me.Update.UseVisualStyleBackColor = True
         '
         'GoBack

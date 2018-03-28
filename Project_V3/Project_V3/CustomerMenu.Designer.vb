@@ -23,22 +23,33 @@ Partial Class CustomerMenu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.OrderMovies = New System.Windows.Forms.Button()
+        Me.LogoutButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'OrderMovies
         '
-        Me.OrderMovies.Location = New System.Drawing.Point(375, 300)
+        Me.OrderMovies.Location = New System.Drawing.Point(23, 45)
         Me.OrderMovies.Name = "OrderMovies"
         Me.OrderMovies.Size = New System.Drawing.Size(164, 49)
         Me.OrderMovies.TabIndex = 0
         Me.OrderMovies.Text = "Order Movies"
         Me.OrderMovies.UseVisualStyleBackColor = True
         '
+        'LogoutButton
+        '
+        Me.LogoutButton.Location = New System.Drawing.Point(161, 296)
+        Me.LogoutButton.Name = "LogoutButton"
+        Me.LogoutButton.Size = New System.Drawing.Size(90, 44)
+        Me.LogoutButton.TabIndex = 1
+        Me.LogoutButton.Text = "Logout"
+        Me.LogoutButton.UseVisualStyleBackColor = True
+        '
         'CustomerMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(586, 395)
+        Me.ClientSize = New System.Drawing.Size(409, 352)
+        Me.Controls.Add(Me.LogoutButton)
         Me.Controls.Add(Me.OrderMovies)
         Me.Name = "CustomerMenu"
         Me.Text = "CustomerMenu"
@@ -47,4 +58,5 @@ Partial Class CustomerMenu
     End Sub
 
     Friend WithEvents OrderMovies As Button
+    Friend WithEvents LogoutButton As Button
 End Class
