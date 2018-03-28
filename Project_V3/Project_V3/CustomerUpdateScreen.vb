@@ -97,8 +97,8 @@ Public Class CustomerUpdateScreen
     End Sub
 
     Private Sub GoBack_Click(sender As Object, e As EventArgs) Handles GoBack.Click
-        Dim oForm As Login
-        oForm = New Login()
+        Dim oForm As CustomerMenu
+        oForm = New CustomerMenu()
         oForm.Show()
         oForm = Nothing
         Me.Hide()
