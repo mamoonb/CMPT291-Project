@@ -33,6 +33,7 @@ Partial Class AddMovie
         Me.NumberOfCopies = New System.Windows.Forms.TextBox()
         Me.Rating = New System.Windows.Forms.TextBox()
         Me.Update = New System.Windows.Forms.Button()
+        Me.GoBack = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'MovieName
@@ -124,11 +125,21 @@ Partial Class AddMovie
         Me.Update.Text = "Update"
         Me.Update.UseVisualStyleBackColor = True
         '
+        'GoBack
+        '
+        Me.GoBack.Location = New System.Drawing.Point(290, 315)
+        Me.GoBack.Name = "GoBack"
+        Me.GoBack.Size = New System.Drawing.Size(42, 37)
+        Me.GoBack.TabIndex = 11
+        Me.GoBack.Text = "<<"
+        Me.GoBack.UseVisualStyleBackColor = True
+        '
         'AddMovie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(461, 410)
+        Me.Controls.Add(Me.GoBack)
         Me.Controls.Add(Me.Update)
         Me.Controls.Add(Me.Rating)
         Me.Controls.Add(Me.NumberOfCopies)
@@ -158,4 +169,5 @@ Partial Class AddMovie
     Friend WithEvents NumberOfCopies As TextBox
     Friend WithEvents Rating As TextBox
     Friend WithEvents Update As Button
+    Friend WithEvents GoBack As Button
 End Class
