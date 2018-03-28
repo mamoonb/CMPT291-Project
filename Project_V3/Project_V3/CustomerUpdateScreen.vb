@@ -14,10 +14,15 @@ Public Class CustomerUpdateScreen
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
         Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
+
         connection.Open()
+        Dim todayDate As String = DateTime.Now.ToShortDateString()
+        Dim Plantype As String = PlanTypeComboBox.Text
         getCIDCount(query)
         command.Connection = connection
-        command.CommandText = "INSERT INTO Customer (CID, FName, LName, Address, Telephone, Email, AccountNum, AccountType, CreditCardNumber, OrderCount, Rating, DateCreated, UserName, Password) VALUES('" & count & "', '" & FirstNameTextBox.Text & "', '" & LastNameTextBox.Text & "', '" & AddressTextBox.Text & "', '" & 123 & "', '" & EmailTextBox.Text & "', '" & 123 & "', '" & 1 & "', '" & CreditCardTextBox.Text & "', '" & 1 & "', '" & 1 & "', '" & 123 & "', '" & UserName.Text & "', '" & Password.Text & "')"
+
+        command.CommandText = "INSERT INTO Customer (CID, FName, LName, Address, Telephone, Email, AccountNum, AccountType, CreditCardNumber, OrderCount, Rating, DateCreated, UserName, Password) VALUES('" & count & "', '" & FirstNameTextBox.Text & "', '" & LastNameTextBox.Text & "', '" & AddressTextBox.Text & "', '" & TelephoneTextBox.Text & "', '" & EmailTextBox.Text & "', '" & count & "', '" & Plantype & "', '" & CreditCardTextBox.Text & "', '" & 1 & "', '" & 1 & "', '" & todayDate & "','" & UserName.Text & "','" & Password.Text & "')"
+
         command.ExecuteNonQuery()
         connection.Close()
 
@@ -30,8 +35,10 @@ Public Class CustomerUpdateScreen
         'connection.Close()
         'End If
 
-        MessageBox.Show("Data Has Been Updated")    'This will pop up a confirmation window
 
+        MessageBox.Show("Data Has Been Updated")    'This will pop up a confirmation window
+        FirstNameTextBox.Text = Nothing
+        PlanTypeComboBox.Text = Nothing
 
     End Sub
 
