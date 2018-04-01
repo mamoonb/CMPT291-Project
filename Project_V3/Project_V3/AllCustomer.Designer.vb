@@ -30,12 +30,12 @@ Partial Class AllCustomer
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-<<<<<<< HEAD
-        Me.DataGridView1.Location = New System.Drawing.Point(14, 71)
-=======
+        '<<<<<<< HEAD
+        'Me.DataGridView1.Location = New System.Drawing.Point(14, 71)
+        '=======
         Me.DataGridView1.Location = New System.Drawing.Point(11, 10)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
->>>>>>> cf0a9921661e75a8bcbe79358bc0f4e6fcd4e822
+        '>>>>>>> cf0a9921661e75a8bcbe79358bc0f4e6fcd4e822
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 28
         Me.DataGridView1.Size = New System.Drawing.Size(690, 341)
@@ -54,12 +54,12 @@ Partial Class AllCustomer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-<<<<<<< HEAD
+        '<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(802, 509)
         Me.Controls.Add(Me.BackButton)
-=======
+        '=======
         Me.ClientSize = New System.Drawing.Size(711, 360)
->>>>>>> cf0a9921661e75a8bcbe79358bc0f4e6fcd4e822
+        '>>>>>>> cf0a9921661e75a8bcbe79358bc0f4e6fcd4e822
         Me.Controls.Add(Me.DataGridView1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "AllCustomer"
