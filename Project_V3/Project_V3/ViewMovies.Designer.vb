@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class AllCustomer
+Partial Class ViewMovies
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,53 +22,68 @@ Partial Class AllCustomer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.BackButton = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.SearchBox = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'BackButton
+        '
+        Me.BackButton.Location = New System.Drawing.Point(12, 11)
+        Me.BackButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BackButton.Name = "BackButton"
+        Me.BackButton.Size = New System.Drawing.Size(48, 42)
+        Me.BackButton.TabIndex = 2
+        Me.BackButton.Text = "<<"
+        Me.BackButton.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-<<<<<<< HEAD
-        Me.DataGridView1.Location = New System.Drawing.Point(14, 71)
-=======
-        Me.DataGridView1.Location = New System.Drawing.Point(11, 10)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 57)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
->>>>>>> cf0a9921661e75a8bcbe79358bc0f4e6fcd4e822
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 28
         Me.DataGridView1.Size = New System.Drawing.Size(690, 341)
-        Me.DataGridView1.TabIndex = 0
+        Me.DataGridView1.TabIndex = 3
         '
-        'BackButton
+        'SearchBox
         '
-        Me.BackButton.Location = New System.Drawing.Point(14, 12)
-        Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(54, 53)
-        Me.BackButton.TabIndex = 1
-        Me.BackButton.Text = "<<"
-        Me.BackButton.UseVisualStyleBackColor = True
+        Me.SearchBox.Location = New System.Drawing.Point(189, 21)
+        Me.SearchBox.Name = "SearchBox"
+        Me.SearchBox.Size = New System.Drawing.Size(336, 22)
+        Me.SearchBox.TabIndex = 4
         '
-        'AllCustomer
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(120, 24)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(63, 17)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "Filter By:"
+        '
+        'ViewMovies
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-<<<<<<< HEAD
-        Me.ClientSize = New System.Drawing.Size(802, 509)
-        Me.Controls.Add(Me.BackButton)
-=======
-        Me.ClientSize = New System.Drawing.Size(711, 360)
->>>>>>> cf0a9921661e75a8bcbe79358bc0f4e6fcd4e822
+        Me.ClientSize = New System.Drawing.Size(713, 409)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.SearchBox)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Name = "AllCustomer"
-        Me.Text = "AllCustomer"
+        Me.Controls.Add(Me.BackButton)
+        Me.Name = "ViewMovies"
+        Me.Text = "ViewMovies"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents BackButton As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents SearchBox As TextBox
+    Friend WithEvents Label1 As Label
 End Class

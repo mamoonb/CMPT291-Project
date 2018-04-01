@@ -47,7 +47,14 @@ Public Class CustomerUpdateScreen
 
         MessageBox.Show("Data Has Been Updated")    'This will pop up a confirmation window
         FirstNameTextBox.Text = Nothing
+        LastNameTextBox.Text = Nothing
+        TelephoneTextBox.Text = Nothing
+        EmailTextBox.Text = Nothing
+        CreditCardTextBox.Text = Nothing
         PlanTypeComboBox.Text = Nothing
+        AddressTextBox.Text = Nothing
+        UserName.Text = Nothing
+        UserName.Text = Nothing
 
     End Sub
 

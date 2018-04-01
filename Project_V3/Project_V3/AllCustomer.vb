@@ -1,6 +1,14 @@
 ﻿Imports System.Data.SqlClient
 Public Class AllCustomer
+<<<<<<< HEAD
     Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
+=======
+<<<<<<< HEAD
+    Dim connection As New SqlConnection("Server = MAMOON-XPS;Database = project;Integrated Security = true ")
+=======
+    Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
+>>>>>>> master
+>>>>>>> master
     Private Sub AllCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim adapter As New SqlDataAdapter("SELECT CID,FName,LName,Address,Telephone,Email,AccountNum,AccountType,CreditCardNumber,OrderCount,Rating,DateCreated FROM Customer", connection)
@@ -17,6 +25,10 @@ Public Class AllCustomer
         oForm.Show()
         oForm = Nothing
         Me.Hide()
+=======
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+>>>>>>> cf0a9921661e75a8bcbe79358bc0f4e6fcd4e822
     End Sub
 
 =======
