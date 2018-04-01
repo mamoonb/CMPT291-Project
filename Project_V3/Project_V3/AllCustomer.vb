@@ -1,6 +1,10 @@
 ﻿Imports System.Data.SqlClient
 Public Class AllCustomer
+<<<<<<< HEAD
+    Dim connection As New SqlConnection("Server = MAMOON-XPS;Database = project;Integrated Security = true ")
+=======
     Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
+>>>>>>> master
     Private Sub AllCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim adapter As New SqlDataAdapter("SELECT * FROM Customer", connection)
@@ -10,11 +14,16 @@ Public Class AllCustomer
 
     End Sub
 
+<<<<<<< HEAD
     Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
         Dim oForm As EmployeeMenu
         oForm = New EmployeeMenu()
         oForm.Show()
         oForm = Nothing
         Me.Hide()
+=======
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+>>>>>>> cf0a9921661e75a8bcbe79358bc0f4e6fcd4e822
     End Sub
 End Class

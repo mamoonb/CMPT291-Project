@@ -26,53 +26,65 @@ Partial Class EmployeeMenu
         Me.UpdateEmployee = New System.Windows.Forms.Button()
         Me.AddMovie = New System.Windows.Forms.Button()
         Me.CustomerDisplayButton = New System.Windows.Forms.Button()
+        Me.DisplayMovie = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'UpdateCustomer
         '
-        Me.UpdateCustomer.Location = New System.Drawing.Point(12, 32)
+        Me.UpdateCustomer.Location = New System.Drawing.Point(11, 26)
         Me.UpdateCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.UpdateCustomer.Name = "UpdateCustomer"
-        Me.UpdateCustomer.Size = New System.Drawing.Size(186, 51)
+        Me.UpdateCustomer.Size = New System.Drawing.Size(165, 41)
         Me.UpdateCustomer.TabIndex = 0
-        Me.UpdateCustomer.Text = "Update Customer"
+        Me.UpdateCustomer.Text = "Add Customer"
         Me.UpdateCustomer.UseVisualStyleBackColor = True
         '
         'UpdateEmployee
         '
-        Me.UpdateEmployee.Location = New System.Drawing.Point(12, 108)
+        Me.UpdateEmployee.Location = New System.Drawing.Point(11, 86)
         Me.UpdateEmployee.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.UpdateEmployee.Name = "UpdateEmployee"
-        Me.UpdateEmployee.Size = New System.Drawing.Size(186, 49)
+        Me.UpdateEmployee.Size = New System.Drawing.Size(165, 39)
         Me.UpdateEmployee.TabIndex = 1
-        Me.UpdateEmployee.Text = "Update Employee"
+        Me.UpdateEmployee.Text = "Add Employee"
         Me.UpdateEmployee.UseVisualStyleBackColor = True
         '
         'AddMovie
         '
-        Me.AddMovie.Location = New System.Drawing.Point(12, 179)
+        Me.AddMovie.Location = New System.Drawing.Point(11, 143)
         Me.AddMovie.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.AddMovie.Name = "AddMovie"
-        Me.AddMovie.Size = New System.Drawing.Size(186, 50)
+        Me.AddMovie.Size = New System.Drawing.Size(165, 40)
         Me.AddMovie.TabIndex = 2
         Me.AddMovie.Text = "Add Movie"
         Me.AddMovie.UseVisualStyleBackColor = True
         '
         'CustomerDisplayButton
         '
-        Me.CustomerDisplayButton.Location = New System.Drawing.Point(12, 266)
+        Me.CustomerDisplayButton.Location = New System.Drawing.Point(11, 199)
         Me.CustomerDisplayButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CustomerDisplayButton.Name = "CustomerDisplayButton"
-        Me.CustomerDisplayButton.Size = New System.Drawing.Size(186, 50)
+        Me.CustomerDisplayButton.Size = New System.Drawing.Size(165, 40)
         Me.CustomerDisplayButton.TabIndex = 4
         Me.CustomerDisplayButton.Text = "Display Customers"
         Me.CustomerDisplayButton.UseVisualStyleBackColor = True
         '
+        'DisplayMovie
+        '
+        Me.DisplayMovie.Location = New System.Drawing.Point(208, 199)
+        Me.DisplayMovie.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DisplayMovie.Name = "DisplayMovie"
+        Me.DisplayMovie.Size = New System.Drawing.Size(165, 40)
+        Me.DisplayMovie.TabIndex = 5
+        Me.DisplayMovie.Text = "Display Movies"
+        Me.DisplayMovie.UseVisualStyleBackColor = True
+        '
         'EmployeeMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(576, 450)
+        Me.ClientSize = New System.Drawing.Size(388, 344)
+        Me.Controls.Add(Me.DisplayMovie)
         Me.Controls.Add(Me.CustomerDisplayButton)
         Me.Controls.Add(Me.AddMovie)
         Me.Controls.Add(Me.UpdateEmployee)
@@ -88,4 +100,5 @@ Partial Class EmployeeMenu
     Friend WithEvents UpdateEmployee As Button
     Friend WithEvents AddMovie As Button
     Friend WithEvents CustomerDisplayButton As Button
+    Friend WithEvents DisplayMovie As Button
 End Class
