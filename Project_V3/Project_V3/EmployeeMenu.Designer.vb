@@ -26,7 +26,11 @@ Partial Class EmployeeMenu
         Me.UpdateEmployee = New System.Windows.Forms.Button()
         Me.AddMovie = New System.Windows.Forms.Button()
         Me.CustomerDisplayButton = New System.Windows.Forms.Button()
+<<<<<<< HEAD
+        Me.DisplayEmployeeButton = New System.Windows.Forms.Button()
+=======
         Me.DisplayMovie = New System.Windows.Forms.Button()
+>>>>>>> master
         Me.SuspendLayout()
         '
         'UpdateCustomer
@@ -69,6 +73,17 @@ Partial Class EmployeeMenu
         Me.CustomerDisplayButton.Text = "Display Customers"
         Me.CustomerDisplayButton.UseVisualStyleBackColor = True
         '
+<<<<<<< HEAD
+        'DisplayEmployeeButton
+        '
+        Me.DisplayEmployeeButton.Location = New System.Drawing.Point(12, 333)
+        Me.DisplayEmployeeButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DisplayEmployeeButton.Name = "DisplayEmployeeButton"
+        Me.DisplayEmployeeButton.Size = New System.Drawing.Size(186, 50)
+        Me.DisplayEmployeeButton.TabIndex = 5
+        Me.DisplayEmployeeButton.Text = "Display Employee"
+        Me.DisplayEmployeeButton.UseVisualStyleBackColor = True
+=======
         'DisplayMovie
         '
         Me.DisplayMovie.Location = New System.Drawing.Point(208, 199)
@@ -78,13 +93,19 @@ Partial Class EmployeeMenu
         Me.DisplayMovie.TabIndex = 5
         Me.DisplayMovie.Text = "Display Movies"
         Me.DisplayMovie.UseVisualStyleBackColor = True
+>>>>>>> master
         '
         'EmployeeMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD
+        Me.ClientSize = New System.Drawing.Size(576, 450)
+        Me.Controls.Add(Me.DisplayEmployeeButton)
+=======
         Me.ClientSize = New System.Drawing.Size(388, 344)
         Me.Controls.Add(Me.DisplayMovie)
+>>>>>>> master
         Me.Controls.Add(Me.CustomerDisplayButton)
         Me.Controls.Add(Me.AddMovie)
         Me.Controls.Add(Me.UpdateEmployee)
@@ -100,5 +121,9 @@ Partial Class EmployeeMenu
     Friend WithEvents UpdateEmployee As Button
     Friend WithEvents AddMovie As Button
     Friend WithEvents CustomerDisplayButton As Button
+<<<<<<< HEAD
+    Friend WithEvents DisplayEmployeeButton As Button
+=======
     Friend WithEvents DisplayMovie As Button
+>>>>>>> master
 End Class
