@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class AllCustomer
-    Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
+    Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
     Private Sub AllCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim adapter As New SqlDataAdapter("SELECT * FROM Customer", connection)
@@ -16,5 +16,9 @@ Public Class AllCustomer
         oForm.Show()
         oForm = Nothing
         Me.Hide()
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
     End Sub
 End Class

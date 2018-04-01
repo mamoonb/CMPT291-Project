@@ -34,4 +34,12 @@
         oForm = Nothing
         Me.Hide()
     End Sub
+
+    Private Sub DisplayEmployeeButton_Click(sender As Object, e As EventArgs) Handles DisplayEmployeeButton.Click
+        Dim oForm As AllEmployee
+        oForm = New AllEmployee()
+        oForm.Show()
+        oForm = Nothing
+        Me.Hide()
+    End Sub
 End Class

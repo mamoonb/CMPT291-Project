@@ -84,6 +84,12 @@
     <Compile Include="AllCustomer.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AllEmployee.Designer.vb">
+      <DependentUpon>AllEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CustomerMenu.Designer.vb">
       <DependentUpon>CustomerMenu.vb</DependentUpon>
     </Compile>
@@ -130,6 +136,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SQLControl.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AddMovie.resx">
@@ -137,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllCustomer.resx">
       <DependentUpon>AllCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllEmployee.resx">
+      <DependentUpon>AllEmployee.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerMenu.resx">
       <DependentUpon>CustomerMenu.vb</DependentUpon>
