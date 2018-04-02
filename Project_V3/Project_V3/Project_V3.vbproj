@@ -150,6 +150,9 @@
     <EmbeddedResource Include="CustomerRegistrationScreen.resx">
       <DependentUpon>CustomerRegistrationScreen.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomerUpdateScreen.resx">
+      <DependentUpon>CustomerUpdateScreen.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmployeeMenu.resx">
       <DependentUpon>EmployeeMenu.vb</DependentUpon>
     </EmbeddedResource>
