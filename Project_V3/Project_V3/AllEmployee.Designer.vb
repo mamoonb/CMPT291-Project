@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class AllCustomer
+Partial Class AllEmployee
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,6 +23,7 @@ Partial Class AllCustomer
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.UpdateButton = New System.Windows.Forms.Button()
         Me.BackButton = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -30,45 +31,46 @@ Partial Class AllCustomer
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        '<<<<<<< HEAD
-        'Me.DataGridView1.Location = New System.Drawing.Point(14, 71)
-        '=======
-        Me.DataGridView1.Location = New System.Drawing.Point(11, 10)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        '>>>>>>> cf0a9921661e75a8bcbe79358bc0f4e6fcd4e822
+        Me.DataGridView1.Location = New System.Drawing.Point(1, 1)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(690, 341)
+        Me.DataGridView1.Size = New System.Drawing.Size(828, 416)
         Me.DataGridView1.TabIndex = 0
+        '
+        'UpdateButton
+        '
+        Me.UpdateButton.Location = New System.Drawing.Point(570, 423)
+        Me.UpdateButton.Name = "UpdateButton"
+        Me.UpdateButton.Size = New System.Drawing.Size(169, 57)
+        Me.UpdateButton.TabIndex = 1
+        Me.UpdateButton.Text = "Update"
+        Me.UpdateButton.UseVisualStyleBackColor = True
         '
         'BackButton
         '
-        Me.BackButton.Location = New System.Drawing.Point(14, 12)
+        Me.BackButton.Location = New System.Drawing.Point(745, 423)
         Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(54, 53)
-        Me.BackButton.TabIndex = 1
+        Me.BackButton.Size = New System.Drawing.Size(75, 57)
+        Me.BackButton.TabIndex = 2
         Me.BackButton.Text = "<<"
         Me.BackButton.UseVisualStyleBackColor = True
         '
-        'AllCustomer
+        'AllEmployee
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        '<<<<<<< HEAD
-        Me.ClientSize = New System.Drawing.Size(802, 509)
+        Me.ClientSize = New System.Drawing.Size(832, 492)
         Me.Controls.Add(Me.BackButton)
-        '=======
-        Me.ClientSize = New System.Drawing.Size(711, 360)
-        '>>>>>>> cf0a9921661e75a8bcbe79358bc0f4e6fcd4e822
+        Me.Controls.Add(Me.UpdateButton)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Name = "AllCustomer"
-        Me.Text = "AllCustomer"
+        Me.Name = "AllEmployee"
+        Me.Text = "AllEmployee"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents UpdateButton As Button
     Friend WithEvents BackButton As Button
 End Class

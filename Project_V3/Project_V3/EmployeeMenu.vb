@@ -34,4 +34,18 @@
         oForm = Nothing
         Me.Hide()
     End Sub
+
+    '<<<<<<< HEAD
+    Private Sub DisplayEmployeeButton_Click(sender As Object, e As EventArgs) Handles DisplayEmployeeButton.Click
+        Dim oForm As AllEmployee
+        oForm = New AllEmployee()
+        '=======
+        'Private Sub DisplayMovie_Click(sender As Object, e As EventArgs) Handles DisplayMovie.Click
+        'Dim oForm As ViewMovies
+        'oForm = New ViewMovies()
+        '>>>>>>> master
+        oForm.Show()
+        oForm = Nothing
+        Me.Hide()
+    End Sub
 End Class

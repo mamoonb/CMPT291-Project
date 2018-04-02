@@ -1,7 +1,16 @@
 ﻿
 Imports System.Data.SqlClient
 Public Class CustomerUpdateScreen
-    Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
+    '<<<<<<< HEAD
+    'adrian
+    'Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
+
+    'tahmid
+    Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
+
+    '=======
+    'Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
+    '>>>>>>> 0dff35cac2a491088bd08adc7a66a45dc84e9179
     Dim command As New SqlCommand
     Dim count As Int16
     Private Sub ContextMenuStrip1_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStrip1.Opening
@@ -38,13 +47,28 @@ Public Class CustomerUpdateScreen
 
         MessageBox.Show("Data Has Been Updated")    'This will pop up a confirmation window
         FirstNameTextBox.Text = Nothing
+        LastNameTextBox.Text = Nothing
+        TelephoneTextBox.Text = Nothing
+        EmailTextBox.Text = Nothing
+        CreditCardTextBox.Text = Nothing
         PlanTypeComboBox.Text = Nothing
+        AddressTextBox.Text = Nothing
+        UserName.Text = Nothing
+        UserName.Text = Nothing
 
     End Sub
 
     'Count the number of Customers in the SQL table and convert it to a String 
     Public Sub getCIDCount(query As String)
-        Dim connStr As String = "Server = DESKTOP-4GN0VE3; Database = project;Integrated Security = true "
+        '<<<<<<< HEAD
+        'adrian
+        'Dim connStr As String = "Server = DESKTOP-4GN0VE3; Database = project;Integrated Security = true "
+        'tahmid
+        'Dim connStr As String = "Server = LAPTOP-7VEJQMDT; Database = project;Integrated Security = true "
+
+        '=======
+        Dim connStr As String = "Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true "
+        '>>>>>>> 0dff35cac2a491088bd08adc7a66a45dc84e9179
         'Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
         Using conn As New SqlConnection(connStr)
             Using comm As New SqlCommand()
