@@ -23,8 +23,8 @@ Partial Class CustomerMenu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.OrderMoviesButton = New System.Windows.Forms.Button()
-        Me.UpdateAccountButton = New System.Windows.Forms.Button()
         Me.SearchMoviesButton = New System.Windows.Forms.Button()
+        Me.UpdateAccountButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'OrderMoviesButton
@@ -37,16 +37,6 @@ Partial Class CustomerMenu
         Me.OrderMoviesButton.Text = "Order Movies"
         Me.OrderMoviesButton.UseVisualStyleBackColor = True
         '
-        'UpdateAccountButton
-        '
-        Me.UpdateAccountButton.Location = New System.Drawing.Point(12, 13)
-        Me.UpdateAccountButton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.UpdateAccountButton.Name = "UpdateAccountButton"
-        Me.UpdateAccountButton.Size = New System.Drawing.Size(354, 61)
-        Me.UpdateAccountButton.TabIndex = 1
-        Me.UpdateAccountButton.Text = "Update Account"
-        Me.UpdateAccountButton.UseVisualStyleBackColor = True
-        '
         'SearchMoviesButton
         '
         Me.SearchMoviesButton.Location = New System.Drawing.Point(12, 91)
@@ -56,6 +46,16 @@ Partial Class CustomerMenu
         Me.SearchMoviesButton.TabIndex = 2
         Me.SearchMoviesButton.Text = "Search Movies"
         Me.SearchMoviesButton.UseVisualStyleBackColor = True
+        '
+        'UpdateAccountButton
+        '
+        Me.UpdateAccountButton.Location = New System.Drawing.Point(12, 13)
+        Me.UpdateAccountButton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UpdateAccountButton.Name = "UpdateAccountButton"
+        Me.UpdateAccountButton.Size = New System.Drawing.Size(354, 61)
+        Me.UpdateAccountButton.TabIndex = 1
+        Me.UpdateAccountButton.Text = "Update Account"
+        Me.UpdateAccountButton.UseVisualStyleBackColor = True
         '
         'CustomerMenu
         '
@@ -73,6 +73,6 @@ Partial Class CustomerMenu
     End Sub
 
     Friend WithEvents OrderMoviesButton As Button
-    Friend WithEvents UpdateAccountButton As Button
     Friend WithEvents SearchMoviesButton As Button
+    Friend WithEvents UpdateAccountButton As Button
 End Class
