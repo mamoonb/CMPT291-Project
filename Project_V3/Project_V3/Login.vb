@@ -4,8 +4,8 @@
     End Sub
 
     Private Sub Register_Click(sender As Object, e As EventArgs) Handles Register.Click
-        Dim oForm As CustomerUpdateScreen
-        oForm = New CustomerUpdateScreen()
+        Dim oForm As CustomerRegisterScreen
+        oForm = New CustomerRegisterScreen()
         oForm.Show()
         oForm = Nothing
         Me.Hide()

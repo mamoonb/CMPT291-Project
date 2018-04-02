@@ -1,7 +1,7 @@
 ﻿Public Class EmployeeMenu
     Private Sub UpdateCustomer_Click(sender As Object, e As EventArgs) Handles UpdateCustomer.Click
-        Dim oForm As CustomerUpdateScreen
-        oForm = New CustomerUpdateScreen()
+        Dim oForm As CustomerRegisterScreen
+        oForm = New CustomerRegisterScreen()
         oForm.Show()
         oForm = Nothing
         Me.Hide()
