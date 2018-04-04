@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7CE5D294-3706-48CD-BD1C-DCE148844742}</ProjectGuid>
+    <ProjectGuid>{55FBB748-9E52-4D84-ADC3-43096E736662}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Project_V3.My.MyApplication</StartupObject>
-    <RootNamespace>Project_V3</RootNamespace>
-    <AssemblyName>Project_V3</AssemblyName>
+    <StartupObject>CustomerUpdateScreen.My.MyApplication</StartupObject>
+    <RootNamespace>CustomerUpdateScreen</RootNamespace>
+    <AssemblyName>CustomerUpdateScreen</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Project_V3.xml</DocumentationFile>
+    <DocumentationFile>CustomerUpdateScreen.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Project_V3.xml</DocumentationFile>
+    <DocumentationFile>CustomerUpdateScreen.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -50,7 +50,6 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
-    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -73,59 +72,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddMovie.Designer.vb">
-      <DependentUpon>AddMovie.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AddMovie.vb">
+    <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllCustomer.Designer.vb">
-      <DependentUpon>AllCustomer.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AllCustomer.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AllEmployee.Designer.vb">
-      <DependentUpon>AllEmployee.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AllEmployee.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerMenu.Designer.vb">
-      <DependentUpon>CustomerMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerMenu.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerRegistrationScreen.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerRegistrationScreen.Designer.vb">
-      <DependentUpon>CustomerRegistrationScreen.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerUpdateScreen.Designer.vb">
-      <DependentUpon>CustomerUpdateScreen.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerUpdateScreen.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EmployeeMenu.Designer.vb">
-      <DependentUpon>EmployeeMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeMenu.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EmployeeUpdateScreen.Designer.vb">
-      <DependentUpon>EmployeeUpdateScreen.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeUpdateScreen.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Login.vb">
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -143,61 +94,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-
-    <Compile Include="SQLControl.vb" />
-
-    <Compile Include="OrderMovies.Designer.vb">
-      <DependentUpon>OrderMovies.vb</DependentUpon>
-    </Compile>
-    <Compile Include="OrderMovies.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewMovies.Designer.vb">
-      <DependentUpon>ViewMovies.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ViewMovies.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AddMovie.resx">
-      <DependentUpon>AddMovie.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AllCustomer.resx">
-      <DependentUpon>AllCustomer.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AllEmployee.resx">
-      <DependentUpon>AllEmployee.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomerMenu.resx">
-      <DependentUpon>CustomerMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomerRegistrationScreen.resx">
-      <DependentUpon>CustomerRegistrationScreen.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomerUpdateScreen.resx">
-      <DependentUpon>CustomerUpdateScreen.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeMenu.resx">
-      <DependentUpon>EmployeeMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeUpdateScreen.resx">
-      <DependentUpon>EmployeeUpdateScreen.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OrderMovies.resx">
-      <DependentUpon>OrderMovies.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewMovies.resx">
-      <DependentUpon>ViewMovies.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
