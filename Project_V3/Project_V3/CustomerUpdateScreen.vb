@@ -76,10 +76,10 @@ Public Class CustomerUpdateScreen
         'Dim connStr As String = "Server = LAPTOP-7VEJQMDT; Database = project;Integrated Security = true "
 
         '=======
-        Dim connStr As String = "Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true "
+        'Dim connStr As String = "Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true "
         '>>>>>>> 0dff35cac2a491088bd08adc7a66a45dc84e9179
         '>>>>>>> master
-        'Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
+        Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
         Using conn As New SqlConnection(connStr)
             Using comm As New SqlCommand()
                 With comm
