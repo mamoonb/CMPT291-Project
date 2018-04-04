@@ -19,7 +19,11 @@ Public Class AddMovie
         connection.Close()
 
         MessageBox.Show("Data Has Been Updated")    'This will pop up a confirmation window
-
+        MovieName.Text = Nothing
+        MovieType.Text = Nothing
+        DistributionFee.Text = Nothing
+        NumberOfCopies.Text = Nothing
+        Rating.Text = Nothing
 
     End Sub
 
