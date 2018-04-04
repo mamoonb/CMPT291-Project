@@ -25,16 +25,18 @@ Partial Class AllEmployee
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.UpdateButton = New System.Windows.Forms.Button()
         Me.BackButton = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SearchBox = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(1, 1)
+        Me.DataGridView1.Location = New System.Drawing.Point(1, 53)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(828, 416)
+        Me.DataGridView1.Size = New System.Drawing.Size(828, 364)
         Me.DataGridView1.TabIndex = 0
         '
         'UpdateButton
@@ -55,11 +57,30 @@ Partial Class AllEmployee
         Me.BackButton.Text = "<<"
         Me.BackButton.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(164, 24)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(70, 20)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Filter By:"
+        '
+        'SearchBox
+        '
+        Me.SearchBox.Location = New System.Drawing.Point(242, 20)
+        Me.SearchBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.SearchBox.Name = "SearchBox"
+        Me.SearchBox.Size = New System.Drawing.Size(378, 26)
+        Me.SearchBox.TabIndex = 6
+        '
         'AllEmployee
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(832, 492)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.SearchBox)
         Me.Controls.Add(Me.BackButton)
         Me.Controls.Add(Me.UpdateButton)
         Me.Controls.Add(Me.DataGridView1)
@@ -67,10 +88,13 @@ Partial Class AllEmployee
         Me.Text = "AllEmployee"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents UpdateButton As Button
     Friend WithEvents BackButton As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents SearchBox As TextBox
 End Class

@@ -26,86 +26,89 @@ Partial Class EmployeeMenu
         Me.UpdateEmployee = New System.Windows.Forms.Button()
         Me.AddMovie = New System.Windows.Forms.Button()
         Me.CustomerDisplayButton = New System.Windows.Forms.Button()
-        '<<<<<<< HEAD
         Me.DisplayEmployeeButton = New System.Windows.Forms.Button()
-        '=======
-        'Me.DisplayMovie = New System.Windows.Forms.Button()
-        '>>>>>>> master
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'UpdateCustomer
         '
-        Me.UpdateCustomer.Location = New System.Drawing.Point(11, 26)
+        Me.UpdateCustomer.Location = New System.Drawing.Point(12, 32)
         Me.UpdateCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.UpdateCustomer.Name = "UpdateCustomer"
-        Me.UpdateCustomer.Size = New System.Drawing.Size(165, 41)
+        Me.UpdateCustomer.Size = New System.Drawing.Size(186, 51)
         Me.UpdateCustomer.TabIndex = 0
         Me.UpdateCustomer.Text = "Add Customer"
         Me.UpdateCustomer.UseVisualStyleBackColor = True
         '
         'UpdateEmployee
         '
-        Me.UpdateEmployee.Location = New System.Drawing.Point(11, 86)
+        Me.UpdateEmployee.Location = New System.Drawing.Point(12, 108)
         Me.UpdateEmployee.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.UpdateEmployee.Name = "UpdateEmployee"
-        Me.UpdateEmployee.Size = New System.Drawing.Size(165, 39)
+        Me.UpdateEmployee.Size = New System.Drawing.Size(186, 49)
         Me.UpdateEmployee.TabIndex = 1
         Me.UpdateEmployee.Text = "Add Employee"
         Me.UpdateEmployee.UseVisualStyleBackColor = True
         '
         'AddMovie
         '
-        Me.AddMovie.Location = New System.Drawing.Point(11, 143)
+        Me.AddMovie.Location = New System.Drawing.Point(12, 179)
         Me.AddMovie.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.AddMovie.Name = "AddMovie"
-        Me.AddMovie.Size = New System.Drawing.Size(165, 40)
+        Me.AddMovie.Size = New System.Drawing.Size(186, 50)
         Me.AddMovie.TabIndex = 2
         Me.AddMovie.Text = "Add Movie"
         Me.AddMovie.UseVisualStyleBackColor = True
         '
         'CustomerDisplayButton
         '
-        Me.CustomerDisplayButton.Location = New System.Drawing.Point(11, 199)
+        Me.CustomerDisplayButton.Location = New System.Drawing.Point(12, 249)
         Me.CustomerDisplayButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CustomerDisplayButton.Name = "CustomerDisplayButton"
-        Me.CustomerDisplayButton.Size = New System.Drawing.Size(165, 40)
+        Me.CustomerDisplayButton.Size = New System.Drawing.Size(186, 50)
         Me.CustomerDisplayButton.TabIndex = 4
         Me.CustomerDisplayButton.Text = "Display Customers"
         Me.CustomerDisplayButton.UseVisualStyleBackColor = True
         '
-        '<<<<<<< HEAD
         'DisplayEmployeeButton
         '
-        Me.DisplayEmployeeButton.Location = New System.Drawing.Point(12, 333)
+        Me.DisplayEmployeeButton.Location = New System.Drawing.Point(12, 388)
         Me.DisplayEmployeeButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DisplayEmployeeButton.Name = "DisplayEmployeeButton"
-        Me.DisplayEmployeeButton.Size = New System.Drawing.Size(186, 50)
+        Me.DisplayEmployeeButton.Size = New System.Drawing.Size(186, 55)
         Me.DisplayEmployeeButton.TabIndex = 5
         Me.DisplayEmployeeButton.Text = "Display Employee"
         Me.DisplayEmployeeButton.UseVisualStyleBackColor = True
-        '=======
-        'DisplayMovie
         '
-        'Me.DisplayMovie.Location = New System.Drawing.Point(208, 199)
-        'Me.DisplayMovie.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        'Me.DisplayMovie.Name = "DisplayMovie"
-        'Me.DisplayMovie.Size = New System.Drawing.Size(165, 40)
-        'Me.DisplayMovie.TabIndex = 5
-        'Me.DisplayMovie.Text = "Display Movies"
-        'Me.DisplayMovie.UseVisualStyleBackColor = True
-        '>>>>>>> master
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(12, 319)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(186, 50)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "View Movies"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(183, 462)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(186, 50)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "LogOut"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'EmployeeMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        '<<<<<<< HEAD
-        Me.ClientSize = New System.Drawing.Size(576, 450)
+        Me.ClientSize = New System.Drawing.Size(455, 523)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DisplayEmployeeButton)
-        '=======
-        'Me.ClientSize = New System.Drawing.Size(388, 344)
-        'Me.Controls.Add(Me.DisplayMovie)
-        '>>>>>>> master
         Me.Controls.Add(Me.CustomerDisplayButton)
         Me.Controls.Add(Me.AddMovie)
         Me.Controls.Add(Me.UpdateEmployee)
@@ -123,6 +126,8 @@ Partial Class EmployeeMenu
     Friend WithEvents CustomerDisplayButton As Button
     '<<<<<<< HEAD
     Friend WithEvents DisplayEmployeeButton As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
     '=======
     'Friend WithEvents DisplayMovie As Button
     '>>>>>>> master

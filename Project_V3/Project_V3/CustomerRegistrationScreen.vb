@@ -31,6 +31,7 @@ Public Class CustomerRegisterScreen
             MessageBox.Show("Data Has Been Updated")    'This will pop up a confirmation window
             FirstNameTextBox.Text = Nothing
             LastNameTextBox.Text = Nothing
+            ApptNumTextBox.Text = Nothing
             StreetNameTextBox.Text = Nothing
             StreetNumTextBox.Text = Nothing
             CityTextBox.Text = Nothing

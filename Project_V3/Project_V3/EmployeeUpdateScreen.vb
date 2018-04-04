@@ -19,7 +19,7 @@ Public Class EmployeeUpdateScreen
         Dim query As String = "SELECT COUNT(EID) AS EIDcount FROM Employee"
         Dim todaydate As String = DateTime.Now.ToShortDateString()
 
-        If SINTextBox.Text.Length = 0 Or FNameTextBox.Text.Length = 0 Or LNameTextBox.Text.Length = 0 Or AddressTextBox.Text.Length = 0 Or StartDateTextBox.Text.Length = 0 Or HourlyRateTextBox.Text.Length = 0 Then
+        If SINTextBox.Text.Length = 0 Or FNameTextBox.Text.Length = 0 Or LNameTextBox.Text.Length = 0 Or StreetNameTextBox.Text.Length = 0 Or StreetNumTextBox.Text.Length = 0 Or CityTextBox.Text.Length = 0 Or StateTextBox.Text.Length = 0 Or ZipTextBox.Text.Length = 0 Or StartDateTextBox.Text.Length = 0 Or HourlyRateTextBox.Text.Length = 0 Then
             MessageBox.Show("Error.Please fill out all the required fields...")
 
             '----------------------------------------------------
@@ -28,7 +28,7 @@ Public Class EmployeeUpdateScreen
             connection.Open()
             getCIDCount(query)
             command.Connection = connection
-            command.CommandText = "INSERT INTO Employee (EID,SIN, FName, LName, Telephone, Address, StartDate, HourlyRate) VALUES('" & count & "', '" & SINTextBox.Text & "', '" & FNameTextBox.Text & "', '" & LNameTextBox.Text & "', '" & TelephoneTextBox.Text & "', '" & AddressTextBox.Text & "', '" & StartDateTextBox.Text & "', '" & HourlyRateTextBox.Text & "')"
+            command.CommandText = "INSERT INTO Employee (EID,SIN, FName, LName, Telephone, StreetName, StreetNum, ApptNum, City, State, ZIP, StartDate, HourlyRate) VALUES('" & count & "', '" & SINTextBox.Text & "', '" & FNameTextBox.Text & "', '" & LNameTextBox.Text & "', '" & TelephoneTextBox.Text & "', '" & StreetNameTextBox.Text & "', '" & StreetNumTextBox.Text & "', '" & ApptNumTextBox.Text & "', '" & CityTextBox.Text & "', '" & StateTextBox.Text & "', '" & ZipTextBox.Text & "', '" & StartDateTextBox.Text & "', '" & HourlyRateTextBox.Text & "')"
             command.ExecuteNonQuery()
             connection.Close()
 
@@ -39,7 +39,12 @@ Public Class EmployeeUpdateScreen
             FNameTextBox.Text = Nothing
             LNameTextBox.Text = Nothing
             TelephoneTextBox.Text = Nothing
-            AddressTextBox.Text = Nothing
+            StreetNameTextBox.Text = Nothing
+            StreetNumTextBox.Text = Nothing
+            CityTextBox.Text = Nothing
+            StateTextBox.Text = Nothing
+            ApptNumTextBox.Text = Nothing
+            ZipTextBox.Text = Nothing
             StartDateTextBox.Text = Nothing
             HourlyRateTextBox.Text = Nothing
 
@@ -81,7 +86,7 @@ Public Class EmployeeUpdateScreen
 
     End Sub
 
-    Private Sub AddressTextBox_TextChanged(sender As Object, e As EventArgs) Handles AddressTextBox.TextChanged
+    Private Sub AddressTextBox_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -98,6 +103,10 @@ Public Class EmployeeUpdateScreen
     End Sub
 
     Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
+
+    Private Sub StateTextBox_TextChanged(sender As Object, e As EventArgs) Handles StateTextBox.TextChanged
 
     End Sub
 End Class

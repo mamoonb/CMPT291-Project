@@ -31,10 +31,10 @@ Partial Class ViewMovies
         '
         'BackButton
         '
-        Me.BackButton.Location = New System.Drawing.Point(12, 11)
+        Me.BackButton.Location = New System.Drawing.Point(729, 448)
         Me.BackButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(48, 42)
+        Me.BackButton.Size = New System.Drawing.Size(61, 52)
         Me.BackButton.TabIndex = 2
         Me.BackButton.Text = "<<"
         Me.BackButton.UseVisualStyleBackColor = True
@@ -42,38 +42,40 @@ Partial Class ViewMovies
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 57)
+        Me.DataGridView1.Location = New System.Drawing.Point(14, 71)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(690, 341)
+        Me.DataGridView1.Size = New System.Drawing.Size(776, 364)
         Me.DataGridView1.TabIndex = 3
         '
         'SearchBox
         '
-        Me.SearchBox.Location = New System.Drawing.Point(189, 21)
+        Me.SearchBox.Location = New System.Drawing.Point(213, 26)
+        Me.SearchBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.SearchBox.Name = "SearchBox"
-        Me.SearchBox.Size = New System.Drawing.Size(336, 22)
+        Me.SearchBox.Size = New System.Drawing.Size(378, 26)
         Me.SearchBox.TabIndex = 4
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(120, 24)
+        Me.Label1.Location = New System.Drawing.Point(135, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 17)
+        Me.Label1.Size = New System.Drawing.Size(70, 20)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Filter By:"
         '
         'ViewMovies
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(713, 409)
+        Me.ClientSize = New System.Drawing.Size(802, 511)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.SearchBox)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.BackButton)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "ViewMovies"
         Me.Text = "ViewMovies"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -62,7 +62,6 @@ Partial Class CustomerRegisterScreen
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -87,7 +86,7 @@ Partial Class CustomerRegisterScreen
         '
         'FirstNameTextBox
         '
-        Me.FirstNameTextBox.Location = New System.Drawing.Point(220, 46)
+        Me.FirstNameTextBox.Location = New System.Drawing.Point(203, 49)
         Me.FirstNameTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.FirstNameTextBox.Name = "FirstNameTextBox"
         Me.FirstNameTextBox.Size = New System.Drawing.Size(184, 26)
@@ -95,7 +94,7 @@ Partial Class CustomerRegisterScreen
         '
         'LastNameTextBox
         '
-        Me.LastNameTextBox.Location = New System.Drawing.Point(220, 90)
+        Me.LastNameTextBox.Location = New System.Drawing.Point(203, 90)
         Me.LastNameTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LastNameTextBox.Name = "LastNameTextBox"
         Me.LastNameTextBox.Size = New System.Drawing.Size(184, 26)
@@ -103,7 +102,7 @@ Partial Class CustomerRegisterScreen
         '
         'TelephoneTextBox
         '
-        Me.TelephoneTextBox.Location = New System.Drawing.Point(220, 138)
+        Me.TelephoneTextBox.Location = New System.Drawing.Point(203, 138)
         Me.TelephoneTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TelephoneTextBox.Name = "TelephoneTextBox"
         Me.TelephoneTextBox.Size = New System.Drawing.Size(184, 26)
@@ -111,7 +110,7 @@ Partial Class CustomerRegisterScreen
         '
         'EmailTextBox
         '
-        Me.EmailTextBox.Location = New System.Drawing.Point(220, 184)
+        Me.EmailTextBox.Location = New System.Drawing.Point(203, 184)
         Me.EmailTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.EmailTextBox.Name = "EmailTextBox"
         Me.EmailTextBox.Size = New System.Drawing.Size(184, 26)
@@ -128,7 +127,7 @@ Partial Class CustomerRegisterScreen
         '
         'CreditCardTextBox
         '
-        Me.CreditCardTextBox.Location = New System.Drawing.Point(220, 234)
+        Me.CreditCardTextBox.Location = New System.Drawing.Point(203, 231)
         Me.CreditCardTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CreditCardTextBox.Name = "CreditCardTextBox"
         Me.CreditCardTextBox.Size = New System.Drawing.Size(184, 26)
@@ -140,7 +139,7 @@ Partial Class CustomerRegisterScreen
         Me.AccountTypeComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.AccountTypeComboBox.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.AccountTypeComboBox.Items.AddRange(New Object() {"Limited Plan", "Unlimited Plan 1", "Unlimited Plan 2", "Unlimited Plan 3"})
-        Me.AccountTypeComboBox.Location = New System.Drawing.Point(220, 288)
+        Me.AccountTypeComboBox.Location = New System.Drawing.Point(203, 291)
         Me.AccountTypeComboBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.AccountTypeComboBox.Name = "AccountTypeComboBox"
         Me.AccountTypeComboBox.Size = New System.Drawing.Size(184, 28)
@@ -151,7 +150,7 @@ Partial Class CustomerRegisterScreen
         'FNameLabel
         '
         Me.FNameLabel.AutoSize = True
-        Me.FNameLabel.Location = New System.Drawing.Point(26, 52)
+        Me.FNameLabel.Location = New System.Drawing.Point(89, 52)
         Me.FNameLabel.Name = "FNameLabel"
         Me.FNameLabel.Size = New System.Drawing.Size(86, 20)
         Me.FNameLabel.TabIndex = 10
@@ -160,7 +159,7 @@ Partial Class CustomerRegisterScreen
         'LNameLabel
         '
         Me.LNameLabel.AutoSize = True
-        Me.LNameLabel.Location = New System.Drawing.Point(26, 96)
+        Me.LNameLabel.Location = New System.Drawing.Point(89, 93)
         Me.LNameLabel.Name = "LNameLabel"
         Me.LNameLabel.Size = New System.Drawing.Size(86, 20)
         Me.LNameLabel.TabIndex = 11
@@ -169,7 +168,7 @@ Partial Class CustomerRegisterScreen
         'TelephoneLabel
         '
         Me.TelephoneLabel.AutoSize = True
-        Me.TelephoneLabel.Location = New System.Drawing.Point(28, 147)
+        Me.TelephoneLabel.Location = New System.Drawing.Point(91, 147)
         Me.TelephoneLabel.Name = "TelephoneLabel"
         Me.TelephoneLabel.Size = New System.Drawing.Size(84, 20)
         Me.TelephoneLabel.TabIndex = 12
@@ -178,7 +177,7 @@ Partial Class CustomerRegisterScreen
         'EmailLabel
         '
         Me.EmailLabel.AutoSize = True
-        Me.EmailLabel.Location = New System.Drawing.Point(28, 193)
+        Me.EmailLabel.Location = New System.Drawing.Point(123, 193)
         Me.EmailLabel.Name = "EmailLabel"
         Me.EmailLabel.Size = New System.Drawing.Size(52, 20)
         Me.EmailLabel.TabIndex = 13
@@ -196,7 +195,7 @@ Partial Class CustomerRegisterScreen
         'AccountTypeLabel
         '
         Me.AccountTypeLabel.AutoSize = True
-        Me.AccountTypeLabel.Location = New System.Drawing.Point(26, 296)
+        Me.AccountTypeLabel.Location = New System.Drawing.Point(69, 294)
         Me.AccountTypeLabel.Name = "AccountTypeLabel"
         Me.AccountTypeLabel.Size = New System.Drawing.Size(106, 20)
         Me.AccountTypeLabel.TabIndex = 15
@@ -205,7 +204,7 @@ Partial Class CustomerRegisterScreen
         'StreetNameLabel
         '
         Me.StreetNameLabel.AutoSize = True
-        Me.StreetNameLabel.Location = New System.Drawing.Point(410, 52)
+        Me.StreetNameLabel.Location = New System.Drawing.Point(455, 49)
         Me.StreetNameLabel.Name = "StreetNameLabel"
         Me.StreetNameLabel.Size = New System.Drawing.Size(99, 20)
         Me.StreetNameLabel.TabIndex = 16
@@ -223,7 +222,7 @@ Partial Class CustomerRegisterScreen
         '
         'UserNameTextBox
         '
-        Me.UserNameTextBox.Location = New System.Drawing.Point(220, 346)
+        Me.UserNameTextBox.Location = New System.Drawing.Point(203, 349)
         Me.UserNameTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.UserNameTextBox.Name = "UserNameTextBox"
         Me.UserNameTextBox.Size = New System.Drawing.Size(184, 26)
@@ -231,7 +230,7 @@ Partial Class CustomerRegisterScreen
         '
         'PasswordTextBox
         '
-        Me.PasswordTextBox.Location = New System.Drawing.Point(220, 397)
+        Me.PasswordTextBox.Location = New System.Drawing.Point(203, 397)
         Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.Size = New System.Drawing.Size(184, 26)
@@ -240,7 +239,7 @@ Partial Class CustomerRegisterScreen
         'UsernameLabel
         '
         Me.UsernameLabel.AutoSize = True
-        Me.UsernameLabel.Location = New System.Drawing.Point(28, 352)
+        Me.UsernameLabel.Location = New System.Drawing.Point(92, 352)
         Me.UsernameLabel.Name = "UsernameLabel"
         Me.UsernameLabel.Size = New System.Drawing.Size(83, 20)
         Me.UsernameLabel.TabIndex = 20
@@ -249,7 +248,7 @@ Partial Class CustomerRegisterScreen
         'PasswordLabel
         '
         Me.PasswordLabel.AutoSize = True
-        Me.PasswordLabel.Location = New System.Drawing.Point(28, 404)
+        Me.PasswordLabel.Location = New System.Drawing.Point(97, 400)
         Me.PasswordLabel.Name = "PasswordLabel"
         Me.PasswordLabel.Size = New System.Drawing.Size(78, 20)
         Me.PasswordLabel.TabIndex = 21
@@ -298,7 +297,7 @@ Partial Class CustomerRegisterScreen
         'StreeNumLabel
         '
         Me.StreeNumLabel.AutoSize = True
-        Me.StreeNumLabel.Location = New System.Drawing.Point(410, 100)
+        Me.StreeNumLabel.Location = New System.Drawing.Point(441, 94)
         Me.StreeNumLabel.Name = "StreeNumLabel"
         Me.StreeNumLabel.Size = New System.Drawing.Size(113, 20)
         Me.StreeNumLabel.TabIndex = 27
@@ -316,7 +315,7 @@ Partial Class CustomerRegisterScreen
         'CityLabel
         '
         Me.CityLabel.AutoSize = True
-        Me.CityLabel.Location = New System.Drawing.Point(410, 190)
+        Me.CityLabel.Location = New System.Drawing.Point(519, 187)
         Me.CityLabel.Name = "CityLabel"
         Me.CityLabel.Size = New System.Drawing.Size(35, 20)
         Me.CityLabel.TabIndex = 29
@@ -325,7 +324,7 @@ Partial Class CustomerRegisterScreen
         'StateLabel
         '
         Me.StateLabel.AutoSize = True
-        Me.StateLabel.Location = New System.Drawing.Point(410, 240)
+        Me.StateLabel.Location = New System.Drawing.Point(506, 241)
         Me.StateLabel.Name = "StateLabel"
         Me.StateLabel.Size = New System.Drawing.Size(48, 20)
         Me.StateLabel.TabIndex = 30
@@ -334,7 +333,7 @@ Partial Class CustomerRegisterScreen
         'ZipLabel
         '
         Me.ZipLabel.AutoSize = True
-        Me.ZipLabel.Location = New System.Drawing.Point(410, 291)
+        Me.ZipLabel.Location = New System.Drawing.Point(520, 288)
         Me.ZipLabel.Name = "ZipLabel"
         Me.ZipLabel.Size = New System.Drawing.Size(34, 20)
         Me.ZipLabel.TabIndex = 31
@@ -344,7 +343,7 @@ Partial Class CustomerRegisterScreen
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(199, 49)
+        Me.Label1.Location = New System.Drawing.Point(69, 46)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(15, 20)
         Me.Label1.TabIndex = 32
@@ -354,7 +353,7 @@ Partial Class CustomerRegisterScreen
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.Red
-        Me.Label2.Location = New System.Drawing.Point(199, 94)
+        Me.Label2.Location = New System.Drawing.Point(68, 90)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(15, 20)
         Me.Label2.TabIndex = 33
@@ -364,7 +363,7 @@ Partial Class CustomerRegisterScreen
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.Red
-        Me.Label3.Location = New System.Drawing.Point(199, 234)
+        Me.Label3.Location = New System.Drawing.Point(16, 235)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(15, 20)
         Me.Label3.TabIndex = 34
@@ -374,7 +373,7 @@ Partial Class CustomerRegisterScreen
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.Red
-        Me.Label4.Location = New System.Drawing.Point(199, 291)
+        Me.Label4.Location = New System.Drawing.Point(48, 288)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(15, 20)
         Me.Label4.TabIndex = 35
@@ -384,7 +383,7 @@ Partial Class CustomerRegisterScreen
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.Red
-        Me.Label5.Location = New System.Drawing.Point(199, 346)
+        Me.Label5.Location = New System.Drawing.Point(80, 349)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(15, 20)
         Me.Label5.TabIndex = 36
@@ -394,7 +393,7 @@ Partial Class CustomerRegisterScreen
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.Red
-        Me.Label6.Location = New System.Drawing.Point(199, 404)
+        Me.Label6.Location = New System.Drawing.Point(80, 397)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(15, 20)
         Me.Label6.TabIndex = 37
@@ -404,7 +403,7 @@ Partial Class CustomerRegisterScreen
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.Red
-        Me.Label7.Location = New System.Drawing.Point(551, 46)
+        Me.Label7.Location = New System.Drawing.Point(441, 46)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(15, 20)
         Me.Label7.TabIndex = 38
@@ -414,27 +413,17 @@ Partial Class CustomerRegisterScreen
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.Red
-        Me.Label8.Location = New System.Drawing.Point(551, 93)
+        Me.Label8.Location = New System.Drawing.Point(432, 90)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(15, 20)
         Me.Label8.TabIndex = 39
         Me.Label8.Text = "*"
         '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.ForeColor = System.Drawing.Color.Red
-        Me.Label9.Location = New System.Drawing.Point(551, 144)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(15, 20)
-        Me.Label9.TabIndex = 40
-        Me.Label9.Text = "*"
-        '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.ForeColor = System.Drawing.Color.Red
-        Me.Label10.Location = New System.Drawing.Point(551, 190)
+        Me.Label10.Location = New System.Drawing.Point(506, 184)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(15, 20)
         Me.Label10.TabIndex = 41
@@ -444,7 +433,7 @@ Partial Class CustomerRegisterScreen
         '
         Me.Label11.AutoSize = True
         Me.Label11.ForeColor = System.Drawing.Color.Red
-        Me.Label11.Location = New System.Drawing.Point(551, 241)
+        Me.Label11.Location = New System.Drawing.Point(497, 235)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(15, 20)
         Me.Label11.TabIndex = 42
@@ -454,7 +443,7 @@ Partial Class CustomerRegisterScreen
         '
         Me.Label12.AutoSize = True
         Me.Label12.ForeColor = System.Drawing.Color.Red
-        Me.Label12.Location = New System.Drawing.Point(551, 291)
+        Me.Label12.Location = New System.Drawing.Point(506, 288)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(15, 20)
         Me.Label12.TabIndex = 43
@@ -479,7 +468,6 @@ Partial Class CustomerRegisterScreen
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -565,7 +553,6 @@ Partial Class CustomerRegisterScreen
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
