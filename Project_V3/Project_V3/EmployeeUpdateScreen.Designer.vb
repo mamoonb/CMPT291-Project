@@ -38,6 +38,13 @@ Partial Class EmployeeUpdateScreen
         Me.StartDateTextBox = New System.Windows.Forms.TextBox()
         Me.TelephoneTextBox = New System.Windows.Forms.TextBox()
         Me.AddressTextBox = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'UpdateButton
@@ -70,7 +77,7 @@ Partial Class EmployeeUpdateScreen
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(325, 128)
+        Me.Label2.Location = New System.Drawing.Point(325, 131)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(93, 20)
         Me.Label2.TabIndex = 20
@@ -123,59 +130,136 @@ Partial Class EmployeeUpdateScreen
         '
         'SINTextBox
         '
-        Me.SINTextBox.Location = New System.Drawing.Point(103, 31)
+        Me.SINTextBox.Location = New System.Drawing.Point(130, 28)
         Me.SINTextBox.Name = "SINTextBox"
         Me.SINTextBox.Size = New System.Drawing.Size(189, 26)
         Me.SINTextBox.TabIndex = 26
         '
         'LNameTextBox
         '
-        Me.LNameTextBox.Location = New System.Drawing.Point(103, 125)
+        Me.LNameTextBox.Location = New System.Drawing.Point(130, 122)
         Me.LNameTextBox.Name = "LNameTextBox"
         Me.LNameTextBox.Size = New System.Drawing.Size(189, 26)
         Me.LNameTextBox.TabIndex = 28
         '
         'FNameTextBox
         '
-        Me.FNameTextBox.Location = New System.Drawing.Point(103, 75)
+        Me.FNameTextBox.Location = New System.Drawing.Point(130, 75)
         Me.FNameTextBox.Name = "FNameTextBox"
         Me.FNameTextBox.Size = New System.Drawing.Size(189, 26)
         Me.FNameTextBox.TabIndex = 29
         '
         'HourlyRateTextBox
         '
-        Me.HourlyRateTextBox.Location = New System.Drawing.Point(424, 125)
+        Me.HourlyRateTextBox.Location = New System.Drawing.Point(438, 128)
         Me.HourlyRateTextBox.Name = "HourlyRateTextBox"
         Me.HourlyRateTextBox.Size = New System.Drawing.Size(215, 26)
         Me.HourlyRateTextBox.TabIndex = 30
         '
         'StartDateTextBox
         '
-        Me.StartDateTextBox.Location = New System.Drawing.Point(424, 75)
+        Me.StartDateTextBox.Location = New System.Drawing.Point(438, 75)
         Me.StartDateTextBox.Name = "StartDateTextBox"
         Me.StartDateTextBox.Size = New System.Drawing.Size(215, 26)
         Me.StartDateTextBox.TabIndex = 31
         '
         'TelephoneTextBox
         '
-        Me.TelephoneTextBox.Location = New System.Drawing.Point(424, 31)
+        Me.TelephoneTextBox.Location = New System.Drawing.Point(438, 31)
         Me.TelephoneTextBox.Name = "TelephoneTextBox"
         Me.TelephoneTextBox.Size = New System.Drawing.Size(215, 26)
         Me.TelephoneTextBox.TabIndex = 32
         '
         'AddressTextBox
         '
-        Me.AddressTextBox.Location = New System.Drawing.Point(103, 189)
+        Me.AddressTextBox.Location = New System.Drawing.Point(130, 186)
         Me.AddressTextBox.Multiline = True
         Me.AddressTextBox.Name = "AddressTextBox"
         Me.AddressTextBox.Size = New System.Drawing.Size(189, 118)
         Me.AddressTextBox.TabIndex = 34
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.Color.Red
+        Me.Label8.Location = New System.Drawing.Point(21, 396)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(77, 20)
+        Me.Label8.TabIndex = 35
+        Me.Label8.Text = "* required"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.ForeColor = System.Drawing.Color.Red
+        Me.Label9.Location = New System.Drawing.Point(109, 31)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(15, 20)
+        Me.Label9.TabIndex = 36
+        Me.Label9.Text = "*"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.Red
+        Me.Label10.Location = New System.Drawing.Point(109, 75)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(15, 20)
+        Me.Label10.TabIndex = 37
+        Me.Label10.Text = "*"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.ForeColor = System.Drawing.Color.Red
+        Me.Label11.Location = New System.Drawing.Point(417, 81)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(15, 20)
+        Me.Label11.TabIndex = 38
+        Me.Label11.Text = "*"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.ForeColor = System.Drawing.Color.Red
+        Me.Label12.Location = New System.Drawing.Point(417, 134)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(15, 20)
+        Me.Label12.TabIndex = 39
+        Me.Label12.Text = "*"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.ForeColor = System.Drawing.Color.Red
+        Me.Label14.Location = New System.Drawing.Point(109, 125)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(15, 20)
+        Me.Label14.TabIndex = 41
+        Me.Label14.Text = "*"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.ForeColor = System.Drawing.Color.Red
+        Me.Label15.Location = New System.Drawing.Point(109, 186)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(15, 20)
+        Me.Label15.TabIndex = 42
+        Me.Label15.Text = "*"
         '
         'EmployeeUpdateScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.AddressTextBox)
         Me.Controls.Add(Me.TelephoneTextBox)
         Me.Controls.Add(Me.StartDateTextBox)
@@ -215,4 +299,11 @@ Partial Class EmployeeUpdateScreen
     Friend WithEvents StartDateTextBox As TextBox
     Friend WithEvents TelephoneTextBox As TextBox
     Friend WithEvents AddressTextBox As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
 End Class
