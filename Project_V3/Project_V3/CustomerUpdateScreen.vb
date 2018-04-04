@@ -1,14 +1,11 @@
-<<<<<<< HEAD
-﻿Public Class CustomerUpdateScreen
-
-End Class
-=======
-﻿
 Imports System.Data.SqlClient
+
+
+'﻿Imports System.Data.SqlClient
 Public Class CustomerUpdateScreen
-<<<<<<< HEAD
-    Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
-=======
+    '<<<<<<< HEAD
+    'Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
+    '=======
     '<<<<<<< HEAD
     'adrian
     'Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
@@ -19,7 +16,7 @@ Public Class CustomerUpdateScreen
     '=======
     'Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
     '>>>>>>> 0dff35cac2a491088bd08adc7a66a45dc84e9179
->>>>>>> master
+    '>>>>>>> master
     Dim command As New SqlCommand
     Dim count As Int16
     Private Sub ContextMenuStrip1_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStrip1.Opening
@@ -69,9 +66,9 @@ Public Class CustomerUpdateScreen
 
     'Count the number of Customers in the SQL table and convert it to a String 
     Public Sub getCIDCount(query As String)
-<<<<<<< HEAD
+        '<<<<<<< HEAD
         Dim connStr As String = "Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true "
-=======
+        '=======
         '<<<<<<< HEAD
         'adrian
         'Dim connStr As String = "Server = DESKTOP-4GN0VE3; Database = project;Integrated Security = true "
@@ -81,7 +78,7 @@ Public Class CustomerUpdateScreen
         '=======
         Dim connStr As String = "Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true "
         '>>>>>>> 0dff35cac2a491088bd08adc7a66a45dc84e9179
->>>>>>> master
+        '>>>>>>> master
         'Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
         Using conn As New SqlConnection(connStr)
             Using comm As New SqlCommand()
@@ -149,4 +146,4 @@ Public Class CustomerUpdateScreen
 
     End Sub
 End Class
->>>>>>> ed50f17c66eaae98d373d61b7f9e45650f00566a
+'>>>>>>> ed50f17c66eaae98d373d61b7f9e45650f00566a

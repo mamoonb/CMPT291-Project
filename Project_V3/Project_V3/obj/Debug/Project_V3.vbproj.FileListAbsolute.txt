@@ -31,14 +31,12 @@ C:\school\cmpt291\project\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Projec
 C:\school\cmpt291\project\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.xml
 C:\school\cmpt291\project\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.pdb
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\AARON\Desktop\CMPT 291\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.AllCustomer.resources
 C:\Users\AARON\Desktop\CMPT 291\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.CustomerMenu.resources
 C:\Users\AARON\Desktop\CMPT 291\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.Login.resources
 C:\Users\AARON\Desktop\CMPT 291\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.CustomerRegisterScreen.resources
 =======
 >>>>>>> ed50f17c66eaae98d373d61b7f9e45650f00566a
-=======
 C:\Users\Mamoon\MacEwan\Macewan 2017-2018\Winter\CMPT 291\Project\CMPT291-Project\Project_V3\Project_V3\bin\Debug\Project_V3.exe.config
 C:\Users\Mamoon\MacEwan\Macewan 2017-2018\Winter\CMPT 291\Project\CMPT291-Project\Project_V3\Project_V3\bin\Debug\Project_V3.exe
 C:\Users\Mamoon\MacEwan\Macewan 2017-2018\Winter\CMPT 291\Project\CMPT291-Project\Project_V3\Project_V3\bin\Debug\Project_V3.pdb
@@ -59,12 +57,8 @@ C:\Users\Mamoon\MacEwan\Macewan 2017-2018\Winter\CMPT 291\Project\CMPT291-Projec
 C:\Users\Mamoon\MacEwan\Macewan 2017-2018\Winter\CMPT 291\Project\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.pdb
 C:\Users\Mamoon\MacEwan\Macewan 2017-2018\Winter\CMPT 291\Project\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.ViewMovies.resources
 C:\Users\Mamoon\MacEwan\Macewan 2017-2018\Winter\CMPT 291\Project\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.OrderMovies.resources
-=======
-C:\Users\AARON\Desktop\CMPT 291\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.AllCustomer.resources
-C:\Users\AARON\Desktop\CMPT 291\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.CustomerMenu.resources
-C:\Users\AARON\Desktop\CMPT 291\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.Login.resources
 C:\school\cmpt291\project\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.AllEmployee.resources
 >>>>>>> master
 C:\school\cmpt291\project\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.OrderMovies.resources
 C:\school\cmpt291\project\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.ViewMovies.resources
->>>>>>> master
+C:\school\cmpt291\project\CMPT291-Project\Project_V3\Project_V3\obj\Debug\Project_V3.CustomerRegisterScreen.resources
