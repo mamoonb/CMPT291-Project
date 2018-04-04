@@ -1,6 +1,4 @@
 Imports System.Data.SqlClient
-
-
 '﻿Imports System.Data.SqlClient
 Public Class CustomerUpdateScreen
     '<<<<<<< HEAD
@@ -8,10 +6,10 @@ Public Class CustomerUpdateScreen
     '=======
     '<<<<<<< HEAD
     'adrian
-    'Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
+    Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
 
     'tahmid
-    Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
+    'Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
 
     '=======
     'Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
@@ -19,59 +17,56 @@ Public Class CustomerUpdateScreen
     '>>>>>>> master
     Dim command As New SqlCommand
     Dim count As Int16
-    Private Sub ContextMenuStrip1_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStrip1.Opening
+    'Private Sub ContextMenuStrip1_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStrip1.Opening
 
-    End Sub
+    'End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
-    Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
+    Private Sub EditButton_Click(sender As Object, e As EventArgs) Handles EditButton.Click
         Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
-
-        connection.Open()
         Dim todayDate As String = DateTime.Now.ToShortDateString()
-        Dim Plantype As String = PlanTypeComboBox.Text
-        getCIDCount(query)
-        command.Connection = connection
+        Dim Accttype As String = AccountTypeComboBox.Text
 
-        command.CommandText = "INSERT INTO Customer (CID, FName, LName, Address, Telephone, Email, AccountNum, AccountType, CreditCardNumber, OrderCount, Rating, DateCreated, UserName, Password) VALUES('" & count & "', '" & FirstNameTextBox.Text & "', '" & LastNameTextBox.Text & "', '" & AddressTextBox.Text & "', '" & TelephoneTextBox.Text & "', '" & EmailTextBox.Text & "', '" & count & "', '" & Plantype & "', '" & CreditCardTextBox.Text & "', '" & 1 & "', '" & 1 & "', '" & todayDate & "','" & UserName.Text & "','" & Password.Text & "')"
+        If FirstNameTextBox.Text.Length = 0 Or LastNameTextBox.Text.Length = 0 Or StreetNameTextBox.Text.Length = 0 Or StreetNumTextBox.Text.Length = 0 Or CityTextBox.Text.Length = 0 Or StateTextBox.Text.Length = 0 Or ZipTextBox.Text.Length = 0 Or AccountTypeComboBox.Text.Length = 0 Or CreditCardTextBox.Text.Length = 0 Or UserNameTextBox.Text.Length = 0 Or PasswordTextBox.Text.Length = 0 Then
+            MessageBox.Show("Error. Please fill out all the required fields")
 
-        command.ExecuteNonQuery()
-        connection.Close()
+        Else
+            connection.Open()
+            getCIDCount(query)
+            command.Connection = connection
+            command.CommandText = "INSERT INTO Customer (CID, FName, LName, StreetName, StreetNum, ApptNum, City, State, ZIP, Telephone, Email, AccountNum, AccountType, CreditCardNumber, OrderCount, Rating, DateCreated, UserName, Password) VALUES('" & count & "', '" & FirstNameTextBox.Text & "', '" & LastNameTextBox.Text & "', '" & StreetNameTextBox.Text & "', '" & StreetNumTextBox.Text & "', '" & ApptNumTextBox.Text & "', '" & CityTextBox.Text & "', '" & StateTextBox.Text & "', '" & ZipTextBox.Text & "', '" & TelephoneTextBox.Text & "', '" & EmailTextBox.Text & "', '" & count & "', '" & Accttype & "', '" & CreditCardTextBox.Text & "', '" & 1 & "', '" & 1 & "', '" & todayDate & "','" & UserNameTextBox.Text & "','" & PasswordTextBox.Text & "')"
+            command.ExecuteNonQuery()
+            connection.Close()
 
+            MessageBox.Show("Data Has Been Updated")    'This will pop up a confirmation window
+            FirstNameTextBox.Text = Nothing
+            LastNameTextBox.Text = Nothing
+            StreetNameTextBox.Text = Nothing
+            StreetNumTextBox.Text = Nothing
+            ApptNumTextBox.Text = Nothing
+            CityTextBox.Text = Nothing
+            StateTextBox.Text = Nothing
+            ZipTextBox.Text = Nothing
+            AccountTypeComboBox.Text = Nothing
+            CreditCardTextBox.Text = Nothing
+            UserNameTextBox.Text = Nothing
+            PasswordTextBox.Text = Nothing
 
-        'This If statement will change the label showing an error message in red
-        'If connection.State = ConnectionState.Closed Then
-        'connection.Open()
-        'lbl_Conn.Text = "***ERROR: Customer NOT added***"
-        'lbl_Conn.ForeColor = Color.Red
-        'connection.Close()
-        'End If
-
-
-        MessageBox.Show("Data Has Been Updated")    'This will pop up a confirmation window
-        FirstNameTextBox.Text = Nothing
-        LastNameTextBox.Text = Nothing
-        TelephoneTextBox.Text = Nothing
-        EmailTextBox.Text = Nothing
-        CreditCardTextBox.Text = Nothing
-        PlanTypeComboBox.Text = Nothing
-        AddressTextBox.Text = Nothing
-        UserName.Text = Nothing
-        UserName.Text = Nothing
+        End If
 
     End Sub
 
     'Count the number of Customers in the SQL table and convert it to a String 
     Public Sub getCIDCount(query As String)
         '<<<<<<< HEAD
-        Dim connStr As String = "Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true "
+        'Dim connStr As String = "Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true "
         '=======
         '<<<<<<< HEAD
         'adrian
-        'Dim connStr As String = "Server = DESKTOP-4GN0VE3; Database = project;Integrated Security = true "
+        Dim connStr As String = "Server = DESKTOP-4GN0VE3; Database = project;Integrated Security = true "
         'tahmid
         'Dim connStr As String = "Server = LAPTOP-7VEJQMDT; Database = project;Integrated Security = true "
 
@@ -79,7 +74,7 @@ Public Class CustomerUpdateScreen
         'Dim connStr As String = "Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true "
         '>>>>>>> 0dff35cac2a491088bd08adc7a66a45dc84e9179
         '>>>>>>> master
-        Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
+        'Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
         Using conn As New SqlConnection(connStr)
             Using comm As New SqlCommand()
                 With comm
@@ -122,27 +117,40 @@ Public Class CustomerUpdateScreen
 
     End Sub
 
-    Private Sub PlanTypeComboBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles PlanTypeComboBox.SelectedIndexChanged
+    Private Sub AccountTypeComboBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles AccountTypeComboBox.SelectedIndexChanged
 
     End Sub
 
-    Private Sub AddressTextBox_TextChanged(sender As Object, e As EventArgs) Handles AddressTextBox.TextChanged
 
-    End Sub
-
-    Private Sub GoBack_Click(sender As Object, e As EventArgs) Handles GoBack.Click
-        Dim oForm As Login
-        oForm = New Login()
+    Private Sub GoBack_Click(sender As Object, e As EventArgs) Handles GoBackButton.Click
+        Dim oForm As CustomerMenu
+        oForm = New CustomerMenu()
         oForm.Show()
         oForm = Nothing
         Me.Hide()
     End Sub
 
-    Private Sub UserName_TextChanged(sender As Object, e As EventArgs) Handles UserName.TextChanged
+    Private Sub UserName_TextChanged(sender As Object, e As EventArgs) Handles UserNameTextBox.TextChanged
 
     End Sub
 
-    Private Sub Password_TextChanged(sender As Object, e As EventArgs) Handles Password.TextChanged
+    Private Sub Password_TextChanged(sender As Object, e As EventArgs) Handles PasswordTextBox.TextChanged
+
+    End Sub
+
+    Private Sub StreetNameTextBox_TextChanged(sender As Object, e As EventArgs) Handles StreetNameTextBox.TextChanged
+
+    End Sub
+
+    Private Sub StreetNumTextBox_TextChanged(sender As Object, e As EventArgs) Handles StreetNumTextBox.TextChanged
+
+    End Sub
+
+    Private Sub ApptNumTextBox_TextChanged(sender As Object, e As EventArgs) Handles ApptNumTextBox.TextChanged
+
+    End Sub
+
+    Private Sub EditButton_Click_1(sender As Object, e As EventArgs) Handles EditButton.Click
 
     End Sub
 End Class

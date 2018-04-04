@@ -22,91 +22,53 @@ Partial Class CustomerMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        '<<<<<<< HEAD
-        Me.OrderMoviesButton = New System.Windows.Forms.Button()
-        Me.SearchMoviesButton = New System.Windows.Forms.Button()
-        Me.UpdateAccountButton = New System.Windows.Forms.Button()
-        '=======
-        '       Me.OrderMovies = New System.Windows.Forms.Button()
-        '       Me.LogoutButton = New System.Windows.Forms.Button()
-        '>>>>>>> master
+        Me.SearchMovieButton = New System.Windows.Forms.Button()
+        Me.OrderMoiveButton = New System.Windows.Forms.Button()
+        Me.EditAccountButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'OrderMoviesButton
+        'SearchMovieButton
         '
-        '<<<<<<< HEAD
-        Me.OrderMoviesButton.Location = New System.Drawing.Point(12, 170)
-        Me.OrderMoviesButton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.OrderMoviesButton.Name = "OrderMoviesButton"
-        Me.OrderMoviesButton.Size = New System.Drawing.Size(354, 61)
-        Me.OrderMoviesButton.TabIndex = 0
-        Me.OrderMoviesButton.Text = "Order Movies"
-        Me.OrderMoviesButton.UseVisualStyleBackColor = True
+        Me.SearchMovieButton.Location = New System.Drawing.Point(41, 27)
+        Me.SearchMovieButton.Name = "SearchMovieButton"
+        Me.SearchMovieButton.Size = New System.Drawing.Size(200, 50)
+        Me.SearchMovieButton.TabIndex = 0
+        Me.SearchMovieButton.Text = "Search Movie"
+        Me.SearchMovieButton.UseVisualStyleBackColor = True
         '
-        'SearchMoviesButton
+        'OrderMoiveButton
         '
-        Me.SearchMoviesButton.Location = New System.Drawing.Point(12, 91)
-        Me.SearchMoviesButton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.SearchMoviesButton.Name = "SearchMoviesButton"
-        Me.SearchMoviesButton.Size = New System.Drawing.Size(354, 61)
-        Me.SearchMoviesButton.TabIndex = 2
-        Me.SearchMoviesButton.Text = "Search Movies"
-        Me.SearchMoviesButton.UseVisualStyleBackColor = True
+        Me.OrderMoiveButton.Location = New System.Drawing.Point(41, 106)
+        Me.OrderMoiveButton.Name = "OrderMoiveButton"
+        Me.OrderMoiveButton.Size = New System.Drawing.Size(200, 50)
+        Me.OrderMoiveButton.TabIndex = 1
+        Me.OrderMoiveButton.Text = "Order Movie"
+        Me.OrderMoiveButton.UseVisualStyleBackColor = True
         '
-        'UpdateAccountButton
+        'EditAccountButton
         '
-        Me.UpdateAccountButton.Location = New System.Drawing.Point(12, 13)
-        Me.UpdateAccountButton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.UpdateAccountButton.Name = "UpdateAccountButton"
-        Me.UpdateAccountButton.Size = New System.Drawing.Size(354, 61)
-        Me.UpdateAccountButton.TabIndex = 1
-        Me.UpdateAccountButton.Text = "Update Account"
-        Me.UpdateAccountButton.UseVisualStyleBackColor = True
-        '=======
-        Me.OrderMovies.Location = New System.Drawing.Point(23, 45)
-        Me.OrderMovies.Name = "OrderMovies"
-        Me.OrderMovies.Size = New System.Drawing.Size(164, 49)
-        Me.OrderMovies.TabIndex = 0
-        Me.OrderMovies.Text = "Order Movies"
-        Me.OrderMovies.UseVisualStyleBackColor = True
-'>>>>>>> master
-        '
-        'LogoutButton
-        '
-        Me.LogoutButton.Location = New System.Drawing.Point(161, 296)
-        Me.LogoutButton.Name = "LogoutButton"
-        Me.LogoutButton.Size = New System.Drawing.Size(90, 44)
-        Me.LogoutButton.TabIndex = 1
-        Me.LogoutButton.Text = "Logout"
-        Me.LogoutButton.UseVisualStyleBackColor = True
+        Me.EditAccountButton.Location = New System.Drawing.Point(41, 180)
+        Me.EditAccountButton.Name = "EditAccountButton"
+        Me.EditAccountButton.Size = New System.Drawing.Size(200, 50)
+        Me.EditAccountButton.TabIndex = 2
+        Me.EditAccountButton.Text = "Edit Account"
+        Me.EditAccountButton.UseVisualStyleBackColor = True
         '
         'CustomerMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-'<<<<<<< HEAD
-        Me.ClientSize = New System.Drawing.Size(378, 244)
-        Me.Controls.Add(Me.SearchMoviesButton)
-        Me.Controls.Add(Me.UpdateAccountButton)
-        Me.Controls.Add(Me.OrderMoviesButton)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-'=======
-        'Me.ClientSize = New System.Drawing.Size(409, 352)
-        'Me.Controls.Add(Me.LogoutButton)
-        'Me.Controls.Add(Me.OrderMovies)
-'>>>>>>> master
+        Me.ClientSize = New System.Drawing.Size(282, 253)
+        Me.Controls.Add(Me.EditAccountButton)
+        Me.Controls.Add(Me.OrderMoiveButton)
+        Me.Controls.Add(Me.SearchMovieButton)
         Me.Name = "CustomerMenu"
-        Me.Text = "Customer Menu"
+        Me.Text = "CustomerMenu"
         Me.ResumeLayout(False)
 
     End Sub
 
-'<<<<<<< HEAD
-    Friend WithEvents OrderMoviesButton As Button
-    Friend WithEvents SearchMoviesButton As Button
-    Friend WithEvents UpdateAccountButton As Button
-'=======
-    Friend WithEvents OrderMovies As Button
-    Friend WithEvents LogoutButton As Button
-'>>>>>>> master
+    Friend WithEvents SearchMovieButton As Button
+    Friend WithEvents OrderMoiveButton As Button
+    Friend WithEvents EditAccountButton As Button
 End Class

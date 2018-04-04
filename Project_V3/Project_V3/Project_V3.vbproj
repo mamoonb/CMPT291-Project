@@ -143,9 +143,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-
     <Compile Include="SQLControl.vb" />
-
     <Compile Include="OrderMovies.Designer.vb">
       <DependentUpon>OrderMovies.vb</DependentUpon>
     </Compile>
