@@ -1,7 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class OrderMovies
-    'Dim connection As New SqlConnection("Server = MAMOON-XPS;Database = project;Integrated Security = true ")
-    Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
+    Dim connection As New SqlConnection("Server = MAMOON-XPS;Database = project;Integrated Security = true ")
     Private Sub ViewMovies_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FilterData("")
     End Sub

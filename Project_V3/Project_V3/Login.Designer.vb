@@ -22,12 +22,15 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.Log_In = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.UNTextBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.PWTextBox = New System.Windows.Forms.TextBox()
         Me.Register = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Log_In
@@ -39,12 +42,12 @@ Partial Class Login
         Me.Log_In.Text = "Login"
         Me.Log_In.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'UNTextBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(179, 83)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(196, 22)
-        Me.TextBox1.TabIndex = 1
+        Me.UNTextBox.Location = New System.Drawing.Point(179, 83)
+        Me.UNTextBox.Name = "UNTextBox"
+        Me.UNTextBox.Size = New System.Drawing.Size(196, 22)
+        Me.UNTextBox.TabIndex = 1
         '
         'Label1
         '
@@ -64,13 +67,13 @@ Partial Class Login
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Password:"
         '
-        'TextBox2
+        'PWTextBox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(179, 116)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(196, 22)
-        Me.TextBox2.TabIndex = 4
+        Me.PWTextBox.Location = New System.Drawing.Point(179, 116)
+        Me.PWTextBox.Name = "PWTextBox"
+        Me.PWTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.PWTextBox.Size = New System.Drawing.Size(196, 22)
+        Me.PWTextBox.TabIndex = 4
         '
         'Register
         '
@@ -81,28 +84,41 @@ Partial Class Login
         Me.Register.Text = "Register"
         Me.Register.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(39, 88)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(51, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(489, 288)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Register)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.PWTextBox)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.UNTextBox)
         Me.Controls.Add(Me.Log_In)
         Me.Name = "Login"
         Me.Text = "Login"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Log_In As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents UNTextBox As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents PWTextBox As TextBox
     Friend WithEvents Register As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
