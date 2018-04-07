@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7CE5D294-3706-48CD-BD1C-DCE148844742}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Project_V3.My.MyApplication</StartupObject>
+    <StartupObject>Project_V3.EmployeeMenu</StartupObject>
     <RootNamespace>Project_V3</RootNamespace>
     <AssemblyName>Project_V3</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -104,6 +104,12 @@
       <DependentUpon>CustomerRegistrationScreen.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CustomerRep.Designer.vb">
+      <DependentUpon>CustomerRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CustomerUpdateScreen.Designer.vb">
       <DependentUpon>CustomerUpdateScreen.vb</DependentUpon>
     </Compile>
@@ -120,6 +126,12 @@
       <DependentUpon>EmployeeUpdateScreen.vb</DependentUpon>
     </Compile>
     <Compile Include="EmployeeUpdateScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
@@ -173,6 +185,9 @@
     <EmbeddedResource Include="CustomerRegistrationScreen.resx">
       <DependentUpon>CustomerRegistrationScreen.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomerRep.resx">
+      <DependentUpon>CustomerRep.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerUpdateScreen.resx">
       <DependentUpon>CustomerUpdateScreen.vb</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeUpdateScreen.resx">
       <DependentUpon>EmployeeUpdateScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
