@@ -7,7 +7,7 @@ Public Class OrderMovies
     End Sub
 
     Public Sub FilterData(valueToSearch)
-        Dim searchQuery As String = "SELECT Name, Genre, Copies, Rating From Movie WHERE CONCAT(Name, Genre, Copies, Rating) like '%" & SearchBox.Text & "%' "
+        Dim searchQuery As String = "SELECT MID, Name, Genre, Copies, Rating From Movie WHERE CONCAT(MID, Name, Genre, Copies, Rating) like '%" & SearchBox.Text & "%' "
         Dim command As New SqlCommand(searchQuery, connection)
         Dim adapter As New SqlDataAdapter(command)
         Dim table As New DataTable()
@@ -33,5 +33,13 @@ Public Class OrderMovies
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
+    End Sub
+
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        Dim index As Integer
+        index = e.RowIndex
+        Dim selectedRow As DataGridViewRow
+        selectedRow = DataGridView1.Rows(index)
+        TextBox1.Text = selectedRow.Cells(0).Value.ToString()
     End Sub
 End Class
