@@ -45,9 +45,15 @@
         Me.Hide()
     End Sub
 
+<<<<<<< HEAD
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim oForm As Login
         oForm = New Login()
+=======
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim oForm As Help
+        oForm = New Help()
+>>>>>>> Mamoon
         oForm.Show()
         oForm = Nothing
         Me.Hide()

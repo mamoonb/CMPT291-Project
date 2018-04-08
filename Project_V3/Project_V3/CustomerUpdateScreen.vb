@@ -4,10 +4,10 @@ Public Class CustomerUpdateScreen
     'tahmd
     'Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
     'Mamoon
-    'Dim connection As New SqlConnection("Server = MAMOON-XPS;Database = project;Integrated Security = true ")
+    Dim connection As New SqlConnection("Server = MAMOON-XPS;Database = project;Integrated Security = true ")
 
     'adrian
-    Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
+    'Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
 
 
     Dim command As New SqlCommand
@@ -57,9 +57,11 @@ Public Class CustomerUpdateScreen
     'Count the number of Customers in the SQL table and convert it to a String 
     Public Sub getCIDCount(query As String)
         'adrian
-        Dim connStr As String = "Server = DESKTOP-4GN0VE3; Database = project;Integrated Security = true "
+        'Dim connStr As String = "Server = DESKTOP-4GN0VE3; Database = project;Integrated Security = true "
         'tahmid
         'Dim connStr As String = "Server = LAPTOP-7VEJQMDT; Database = project;Integrated Security = true "
+        'Mamoon
+        Dim connStr As String = "Server = MAMOON-XPS;Database = project;Integrated Security = true "
 
 
         'Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"

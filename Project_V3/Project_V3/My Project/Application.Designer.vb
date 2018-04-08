@@ -11,6 +11,7 @@
 Option Strict On
 Option Explicit On
 
+<<<<<<< HEAD
 
 Namespace My
     
@@ -36,3 +37,5 @@ Namespace My
         End Sub
     End Class
 End Namespace
+=======
+>>>>>>> Mamoon

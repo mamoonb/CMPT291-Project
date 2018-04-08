@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 Public Class AddMovie
     'Dim connection As New SqlConnection("Server = MAMOON-XPS;Database = project;Integrated Security = true ")
-    Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
+    Dim connection As New SqlConnection("Server = Server = MAMOON-XPS;Database = project;Integrated Security = true ")
     Dim command As New SqlCommand
     Dim count As Int16
 
@@ -10,7 +10,7 @@ Public Class AddMovie
 
     End Sub
 
-    Private Sub Update_Click(sender As Object, e As EventArgs) Handles Update.Click
+    Private Sub Update_Click(sender As Object, e As EventArgs) Handles Add.Click
         Dim query As String = "SELECT COUNT(MID) AS MIDcount FROM Movie"
         connection.Open()
         getCIDCount(query)
