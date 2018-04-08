@@ -1,11 +1,7 @@
 ﻿
 Imports System.Data.SqlClient
 Public Class CustomerRegisterScreen
-<<<<<<< HEAD
-    Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
-=======
     Dim connection As New SqlConnection("Server = Server = MAMOON-XPS;Database = project;Integrated Security = true ")
->>>>>>> Mamoon
     Dim command As New SqlCommand
     Dim count As Int16
     Private Sub ContextMenuStrip1_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStrip1.Opening
@@ -52,11 +48,8 @@ Public Class CustomerRegisterScreen
 
     'Count the number of Customers in the SQL table and convert it to a String 
     Public Sub getCIDCount(query As String)
-<<<<<<< HEAD
-        Dim connStr As String = "Server = LAPTOP-7VEJQMDT; Database = project;Integrated Security = true "
-=======
+
         Dim connStr As String = "Server = Server = MAMOON-XPS; Database = project;Integrated Security = true "
->>>>>>> Mamoon
         'Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
         Using conn As New SqlConnection(connStr)
             Using comm As New SqlCommand()
