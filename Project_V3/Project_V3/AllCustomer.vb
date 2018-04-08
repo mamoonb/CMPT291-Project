@@ -5,7 +5,7 @@ Public Class AllCustomer
 
     Private Sub AllCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Dim adapter As New SqlDataAdapter("SELECT CID,FName,LName,Address,Telephone,Email,AccountNum,AccountType,CreditCardNumber,OrderCount,Rating,DateCreated FROM Customer", connection)
+        Dim adapter As New SqlDataAdapter("SELECT CID,FName,LName,StreetName, StreetNum, ApptNum, City, State, ZIP,Telephone,Email,AccountNum,AccountType,CreditCardNumber,OrderCount,Rating,DateCreated FROM Customer", connection)
         Dim table As New DataTable()
         adapter.Fill(table)
         DataGridView1.DataSource = table

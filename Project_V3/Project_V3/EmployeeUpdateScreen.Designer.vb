@@ -59,6 +59,12 @@ Partial Class EmployeeUpdateScreen
         Me.StreetNumTextBox = New System.Windows.Forms.TextBox()
         Me.StreetNameLabel = New System.Windows.Forms.Label()
         Me.StreetNameTextBox = New System.Windows.Forms.TextBox()
+        Me.UsernameTextBox = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.PasswordTextBox = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'UpdateButton
@@ -388,11 +394,70 @@ Partial Class EmployeeUpdateScreen
         Me.StreetNameTextBox.Size = New System.Drawing.Size(184, 26)
         Me.StreetNameTextBox.TabIndex = 44
         '
+        'UsernameTextBox
+        '
+        Me.UsernameTextBox.Location = New System.Drawing.Point(506, 177)
+        Me.UsernameTextBox.Name = "UsernameTextBox"
+        Me.UsernameTextBox.Size = New System.Drawing.Size(215, 26)
+        Me.UsernameTextBox.TabIndex = 65
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(406, 177)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(83, 20)
+        Me.Label21.TabIndex = 64
+        Me.Label21.Text = "Username"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.ForeColor = System.Drawing.Color.Red
+        Me.Label5.Location = New System.Drawing.Point(396, 226)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(15, 20)
+        Me.Label5.TabIndex = 68
+        Me.Label5.Text = "*"
+        '
+        'PasswordTextBox
+        '
+        Me.PasswordTextBox.Location = New System.Drawing.Point(506, 232)
+        Me.PasswordTextBox.Name = "PasswordTextBox"
+        Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.PasswordTextBox.Size = New System.Drawing.Size(215, 26)
+        Me.PasswordTextBox.TabIndex = 67
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(406, 232)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(78, 20)
+        Me.Label15.TabIndex = 66
+        Me.Label15.Text = "Password"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.ForeColor = System.Drawing.Color.Red
+        Me.Label20.Location = New System.Drawing.Point(396, 166)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(15, 20)
+        Me.Label20.TabIndex = 69
+        Me.Label20.Text = "*"
+        '
         'EmployeeUpdateScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(806, 526)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.PasswordTextBox)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.UsernameTextBox)
+        Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label17)
@@ -474,4 +539,10 @@ Partial Class EmployeeUpdateScreen
     Friend WithEvents StreetNumTextBox As TextBox
     Friend WithEvents StreetNameLabel As Label
     Friend WithEvents StreetNameTextBox As TextBox
+    Friend WithEvents UsernameTextBox As TextBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents PasswordTextBox As TextBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label20 As Label
 End Class

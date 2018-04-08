@@ -233,6 +233,7 @@ Partial Class CustomerRegisterScreen
         Me.PasswordTextBox.Location = New System.Drawing.Point(203, 397)
         Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PasswordTextBox.Name = "PasswordTextBox"
+        Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PasswordTextBox.Size = New System.Drawing.Size(184, 26)
         Me.PasswordTextBox.TabIndex = 19
         '

@@ -44,4 +44,12 @@
         oForm = Nothing
         Me.Hide()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim oForm As Login
+        oForm = New Login()
+        oForm.Show()
+        oForm = Nothing
+        Me.Hide()
+    End Sub
 End Class

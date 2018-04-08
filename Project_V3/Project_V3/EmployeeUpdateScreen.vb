@@ -28,7 +28,8 @@ Public Class EmployeeUpdateScreen
             connection.Open()
             getCIDCount(query)
             command.Connection = connection
-            command.CommandText = "INSERT INTO Employee (EID,SIN, FName, LName, Telephone, StreetName, StreetNum, ApptNum, City, State, ZIP, StartDate, HourlyRate) VALUES('" & count & "', '" & SINTextBox.Text & "', '" & FNameTextBox.Text & "', '" & LNameTextBox.Text & "', '" & TelephoneTextBox.Text & "', '" & StreetNameTextBox.Text & "', '" & StreetNumTextBox.Text & "', '" & ApptNumTextBox.Text & "', '" & CityTextBox.Text & "', '" & StateTextBox.Text & "', '" & ZipTextBox.Text & "', '" & StartDateTextBox.Text & "', '" & HourlyRateTextBox.Text & "')"
+            command.CommandText = "INSERT INTO Employee (EID,SIN, FName, LName, Telephone, StreetName, StreetNum, ApptName, City, State, ZIP, StartDate, HourlyRate, Username, Password) VALUES('" & count & "', '" & SINTextBox.Text & "', '" & FNameTextBox.Text & "', '" & LNameTextBox.Text & "', '" & TelephoneTextBox.Text & "', '" & StreetNameTextBox.Text & "', '" & StreetNumTextBox.Text & "', '" & ApptNumTextBox.Text & "', '" & CityTextBox.Text & "', '" & StateTextBox.Text & "', '" & ZipTextBox.Text & "', '" & StartDateTextBox.Text & "', '" & HourlyRateTextBox.Text & "', '" & UsernameTextBox.Text & "', '" & PasswordTextBox.Text & "')"
+            command.CommandText = "INSERT INTO LoginEmployee (UserName,Password,EID) VALUES('" & UsernameTextBox.Text & "','" & PasswordTextBox.Text & "','" & count & "')"
             command.ExecuteNonQuery()
             connection.Close()
 
@@ -47,6 +48,8 @@ Public Class EmployeeUpdateScreen
             ZipTextBox.Text = Nothing
             StartDateTextBox.Text = Nothing
             HourlyRateTextBox.Text = Nothing
+            UsernameTextBox.Text = Nothing
+            PasswordTextBox.Text = Nothing
 
         End If
 
