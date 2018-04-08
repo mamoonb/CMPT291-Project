@@ -2,8 +2,8 @@
 Imports System.Data.SqlClient
 Public Class AllEmployee
     Private SQL As New SQLControl
-    Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
-
+    'Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
+    Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
 
     Private Sub AllEmployee_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SQL.ExecQuery("SELECT * FROM Employee")

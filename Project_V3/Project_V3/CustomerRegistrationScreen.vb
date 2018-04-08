@@ -1,8 +1,10 @@
 ﻿
 Imports System.Data.SqlClient
 Public Class CustomerRegisterScreen
-    Dim connection As New SqlConnection("Server = Server = MAMOON-XPS;Database = project;Integrated Security = true ")
+    'Dim connection As New SqlConnection("Server = Server = MAMOON-XPS;Database = project;Integrated Security = true ")
+    Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
     Dim command As New SqlCommand
+    'Dim command2 As New SqlCommand
     Dim count As Int16
     Private Sub ContextMenuStrip1_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStrip1.Opening
 
@@ -23,11 +25,20 @@ Public Class CustomerRegisterScreen
         Else
             connection.Open()
             getCIDCount(query)
+
             command.Connection = connection
             command.CommandText = "INSERT INTO Customer (CID, FName, LName, StreetName, StreetNum, ApptNum, City, State, ZIP, Telephone, Email, AccountNum, AccountType, CreditCardNumber, OrderCount, Rating, DateCreated, UserName, Password) VALUES('" & count & "', '" & FirstNameTextBox.Text & "', '" & LastNameTextBox.Text & "', '" & StreetNameTextBox.Text & "', '" & StreetNumTextBox.Text & "', '" & ApptNumTextBox.Text & "', '" & CityTextBox.Text & "', '" & StateTextBox.Text & "', '" & ZipTextBox.Text & "', '" & TelephoneTextBox.Text & "', '" & EmailTextBox.Text & "', '" & count & "', '" & Accttype & "', '" & CreditCardTextBox.Text & "', '" & 1 & "', '" & 1 & "', '" & todayDate & "','" & UserNameTextBox.Text & "','" & PasswordTextBox.Text & "')"
-            command.CommandText = "INSERT INTO LoginCustomer (UserName,Password,CID) VALUES('" & UserNameTextBox.Text & "','" & PasswordTextBox.Text & "','" & count & "')"
             command.ExecuteNonQuery()
             connection.Close()
+
+            'connection.Open()
+            ''getCIDCount(query)
+            'command2.Connection = connection
+            'command2.CommandText = "INSERT INTO LoginCustomer (UserName,Password,CID) VALUES('" & UserNameTextBox.Text & "','" & PasswordTextBox.Text & "','" & count & "')"
+
+            'command2.ExecuteNonQuery()
+
+            'connection.Close()
 
             MessageBox.Show("Data Has Been Updated")    'This will pop up a confirmation window
             FirstNameTextBox.Text = Nothing
@@ -49,7 +60,8 @@ Public Class CustomerRegisterScreen
     'Count the number of Customers in the SQL table and convert it to a String 
     Public Sub getCIDCount(query As String)
 
-        Dim connStr As String = "Server = Server = MAMOON-XPS; Database = project;Integrated Security = true "
+        'Dim connStr As String = "Server = Server = MAMOON-XPS; Database = project;Integrated Security = true "
+        Dim connStr As String = "Server = DESKTOP-4GN0VE3; Database = project;Integrated Security = true "
         'Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
         Using conn As New SqlConnection(connStr)
             Using comm As New SqlCommand()

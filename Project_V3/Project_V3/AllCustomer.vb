@@ -1,8 +1,8 @@
 ﻿Imports System.Data.SqlClient
 Public Class AllCustomer
 
-    Dim connection As New SqlConnection("Server = Server = MAMOON-XPS;Database = project;Integrated Security = true ")
-
+    'Dim connection As New SqlConnection("Server = Server = MAMOON-XPS;Database = project;Integrated Security = true ")
+    Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
     Private Sub AllCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim adapter As New SqlDataAdapter("SELECT CID,FName,LName,StreetName, StreetNum, ApptNum, City, State, ZIP,Telephone,Email,AccountNum,AccountType,CreditCardNumber,OrderCount,Rating,DateCreated FROM Customer", connection)
