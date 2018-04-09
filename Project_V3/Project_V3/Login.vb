@@ -9,7 +9,7 @@ Public Class Login
     Private Sub Log_InCustomer_Click(sender As Object, e As EventArgs) Handles Log_InCustomer.Click
         Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
         connection.Open()
-        Dim command As New SqlCommand("select * from LoginCustomer where UserName=@username and Password=@password", connection)
+        Dim command As New SqlCommand("select * from Customer where UserName=@username and Password=@password", connection)
 
 
         command.Parameters.Add("@username", SqlDbType.VarChar).Value = UserTextBox.Text
@@ -69,7 +69,7 @@ Public Class Login
     Private Sub Log_InEmployee_Click(sender As Object, e As EventArgs) Handles Log_InEmployee.Click
         Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
         connection.Open()
-        Dim command As New SqlCommand("select * from LoginEmployee where UserName=@username and Password=@password", connection)
+        Dim command As New SqlCommand("select * from Employee where UserName=@username and Password=@password", connection)
 
 
         command.Parameters.Add("@username", SqlDbType.VarChar).Value = UserTextBox.Text
