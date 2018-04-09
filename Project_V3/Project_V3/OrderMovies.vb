@@ -1,7 +1,8 @@
 ﻿Imports System.Data.SqlClient
 Public Class OrderMovies
     'Dim connection As New SqlConnection("Server = MAMOON-XPS;Database = project;Integrated Security = true ")
-    Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
+    'Dim connection As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
+    Dim connection As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
     Dim command As New SqlCommand
     Dim count As Int16
     Dim MovieID As String
@@ -54,18 +55,20 @@ Public Class OrderMovies
     Private Sub decrementCount()
         Dim query As String = "SELECT COUNT(MID) AS OMIDcount FROM Movie"
         connection.Open()
-        Dim count1 As String = "SELECT Copies FROM Movie INNER JOIN Movie on Movie.MID = '" & MovieID & "' "
+        'Dim count1 As String = "SELECT Copies FROM Movie INNER JOIN Movie on Movie.MID = '" & MovieID & "' "
+        Dim count1 As String = "SELECT Copies FROM Movie WHERE Movie.MID ='" & MovieID & "' "
         Dim count2 As Int16
         Int16.TryParse(count1, count2)
-        count2 = count2 - 1
+        count2 = count2
         count1 = count2.ToString()
         command.Connection = connection
-        command.CommandText = "UPDATE [Movie] SET Copies = @Copies WHERE Movie.MID = '" & MovieID & "'"
-        Try
-            command.Parameters.AddWithValue("@Copies", count1)
-        Catch ex As Exception
+        'command.CommandText = "UPDATE [Movie] SET Copies = @Copies WHERE Movie.MID = '" & MovieID & "'"
+        command.CommandText = "UPDATE Movie SET Copies = '" & count1 & "' WHERE MID = " & MovieID & " "
+        'Try
+        'command.Parameters.AddWithValue("@Copies", count1)
+        'Catch ex As Exception
 
-        End Try
+        'End Try
         command.ExecuteNonQuery()
         connection.Close()
     End Sub
@@ -73,7 +76,7 @@ Public Class OrderMovies
     Public Sub getOIDCount(query As String)
 
         'Dim connStr As String = "Server = Server = MAMOON-XPS; Database = project;Integrated Security = true "
-        Dim connStr As String = "Server = DESKTOP-4GN0VE3; Database = project;Integrated Security = true "
+        Dim connStr As String = "Server = LAPTOP-7VEJQMDT; Database = project;Integrated Security = true "
         'Dim query As String = "SELECT COUNT(CID) AS CIDcount FROM Customer"
         Using conn As New SqlConnection(connStr)
             Using comm As New SqlCommand()

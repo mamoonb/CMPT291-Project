@@ -2,8 +2,8 @@
 Imports System.Data.SqlClient
 Public Class SQLControl
     'connection
-    'Private SQLCon As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
-    Private SQLCon As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
+    Private SQLCon As New SqlConnection("Server = LAPTOP-7VEJQMDT;Database = project;Integrated Security = true ")
+    'Private SQLCon As New SqlConnection("Server = DESKTOP-4GN0VE3;Database = project;Integrated Security = true ")
     Private SQLCmd As SqlCommand
 
     'sql data
